@@ -218,6 +218,7 @@ line-height: 20px;
 }
 .range-slider-interact {
     position: relative;
+    z-index: 130;
 }
 .range-slider-interact--element {
     position: absolute;
