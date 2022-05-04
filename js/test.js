@@ -34,7 +34,7 @@ bonusRange.addEventListener("input", () => {
         inviteFriendQuantity.innerHTML = `1 друга`
         activeImg[0].classList.remove('active');
         if (bonusQuantity.innerHTML !== "2000") {
-            animateValue(bonusQuantity, 4000, 2000, 5000);
+            animateValue(bonusQuantity, 4000, 2000, 500);
         }
     }
     if (bonusRange.value >= "1") {
@@ -50,7 +50,6 @@ function sliderAdd(bonusRangeValue) {
         activeImg.forEach((element) => {
             element.style.transform = `scale(0.${100 - bonusRangeValue * 2})`;
         });
-console.log(bonusSum)
         animateValue(bonusQuantity, bonusSum, (2000 * (i + 1)), 1000);
         bonusSum = (2000 * (i + 1));
         inviteFriendQuantity.innerHTML = `${i + 1} друзей`
@@ -61,8 +60,8 @@ function sliderRemove(bonusRangeValue) {
     for (let i = 6; i > bonusRangeValue; i--) {
         if (activeImg[i].classList.contains("active")) {
             activeImg[i].classList.remove("active");
-            // animateValue(bonusQuantity, (2000 * (i + 1)), bonusSum, 1000);
-            // bonusSum = (2000 * (i - 1));
+            animateValue(bonusQuantity, (2000 * (i + 1)), bonusSum, 1000);
+            bonusSum = (2000 * (i - 1));
         }
         activeImg[i].style.transform = `scale(0)`;
 
