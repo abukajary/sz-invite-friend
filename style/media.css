@@ -18,15 +18,30 @@
     }
     .header-content {
         border-radius: unset;
-        padding-top: 82px;
+        padding-top: 195px;
     }
     /* .header-content:before {
         
     } */
+    .range-img:nth-child(3).active {
+        margin-bottom: 227px;
+    }
+    .blackhole {
+        width: 449px;
+    }
+    .enigma {
+        width: 122%;
+        height: 79px;
+    }
     .header-content-right h1:nth-child(1),
     .footer-em br {
         display: block;
     }
+    .range-img:nth-child(1).active { 
+        margin-left: -59px;
+    }
+    .range-img:nth-child(2).active {
+        margin-left: 157px;}
 
     .footer-em {
         display: table;

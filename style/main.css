@@ -7,8 +7,11 @@
     transform-origin: bottom;
     background: black;
     border-radius: 180%;
+    bottom: 0;
 }
-
+.header-rangeslider-imgs {
+    position: relative;
+}
 * {
     margin: 0;
     padding: 0;
@@ -103,6 +106,7 @@ box-shadow: 0px 32px 72px rgba(0, 0, 0, 0.15);
 }
 .range-img:nth-child(1).active {
     margin-right: 115px;
+   
 }
 .range-img:nth-child(3).active {
     margin-bottom: 90px;
