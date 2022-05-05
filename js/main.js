@@ -7,7 +7,7 @@ let inviteFriendQuantity = document.getElementById('invite-friend-qtty');
 const bonusQuantity = document.getElementById("bonusQuantity");
 let interactiveItems = document.querySelectorAll('.interactive-element');
 
-let bonusSum = 0;
+bonusSum = 0
 function animateValue(bonusQuantity, start, end, duration) {
     // let inProgress = 0
     let startTimestamp = null;
@@ -38,19 +38,19 @@ function sliderAdd(bonusRangeValue) {
         inviteFriendQuantity.innerHTML = `${i + 1} друзей`
     }
 }
-
 function sliderRemove(bonusRangeValue) {
-    for (let i = 7; i > bonusRangeValue; i--) {
-        if (activeImg[i - 1].classList.contains("active")) {
-            activeImg[i - 1].classList.remove("active");
-        }
-        animateValue(bonusQuantity, (2000 * (i + 1)), bonusSum, 1000);
-        bonusSum = (2000 * (i - 1));
-        inviteFriendQuantity.innerHTML = `${i} друзей`
-    }
-    // activeImg[i].style.transform = `scale(0)`;
-
+  for (let i = 6; i > bonusRangeValue; i--) {
+      if (activeImg[i].classList.contains("active")) {
+          activeImg[i].classList.remove("active");
+          bonusSum = (2000 * (i));
+          animateValue(bonusQuantity, (2000 * (i + 1)), bonusSum, 1000);
+          inviteFriendQuantity.innerHTML = `${i} друзей`
+      }
+      activeImg[i].style.transform = `scale(0)`;
+      
+  }
 }
+
 let kostyl = 0
 if(window.innerWidth > 900)  {
   let bonusBoxHeight = document.querySelectorAll('.bonus-box');

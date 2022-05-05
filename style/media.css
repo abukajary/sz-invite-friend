@@ -4,6 +4,7 @@
     }
     .dekstop-flex.header-info {
         display: grid;
+       
     }
     .dekstop-flex {
         display: grid;
@@ -35,6 +36,7 @@
     }
     .blackhole {
         width: 449px;
+        background: #2D2B74;
     }
     .enigma {
         width: 122%;
@@ -69,7 +71,9 @@
     .header-info--muted br {
         display: block;
     }
-
+    .header-info {
+        margin-top: 40px;
+    }
     .header-info .header-info--p {
         /* display: none; */
     }
@@ -143,9 +147,20 @@ line-height: 25px;
     picture img {
         width: 100%;
     }
+    .blackhole::before {
+        position: absolute;
+        content: '';
+        width: 215px;
+        height: 127px;
+        background: #2D2B74;
+        /* filter: blur(30px); */
+        top: 0;
+        z-index: 20;
+        transform: translateY(-60%);
+    }
     .range-img:nth-child(2).active {
         margin-left: 255px;
-        z-index: 10;
+        z-index: 51;
         width: 70%;
     }
     .range-img:nth-child(1).active {
@@ -154,7 +169,7 @@ line-height: 25px;
     }
     .range-img:nth-child(4).active {
         z-index: 9;
-        width: 60%;
+        width: 50%;
         margin-left: 305px;
         margin-bottom: 200px;
     }
@@ -167,7 +182,7 @@ line-height: 25px;
     .range-img:nth-child(5).active {
         margin-bottom: 200px;
         margin-right: 350px;
-        width: 55%;
+        width: 50%;
         z-index: 9;
     }
     .range-img:nth-child(6).active {
