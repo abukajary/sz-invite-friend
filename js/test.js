@@ -5,6 +5,8 @@ const bonusRange = document.querySelector(".js-range-slider");
 let activeImg = document.querySelectorAll(".range-img");
 let inviteFriendQuantity = document.getElementById('invite-friend-qtty');
 const bonusQuantity = document.getElementById("bonusQuantity");
+let interactiveItems = document.querySelectorAll('.interactive-element');
+
 let bonusSum = 0;
 function animateValue(bonusQuantity, start, end, duration) {
     // let inProgress = 0
@@ -36,16 +38,22 @@ bonusRange.addEventListener("input", () => {
         if (bonusQuantity.innerHTML !== "2000") {
             animateValue(bonusQuantity, 4000, 2000, 500);
         }
+        interactiveItems.forEach((e) => {
+            e.style.height = 'auto'
+        })
     }
     if (bonusRange.value >= "1") {
         activeImg[0].classList.add('active');
         // animateValue(obj, 0, 2000, 100);
+        interactiveItems.forEach((e) => {
+            e.style.height = '0px'
+        })
     }
 });
 
 function sliderAdd(bonusRangeValue) {
-    for (let i = 1; i <= bonusRangeValue; i++) {
 
+    for (let i = 1; i <= bonusRangeValue; i++) {
         activeImg[i].classList.add("active");
         activeImg.forEach((element) => {
             element.style.transform = `scale(0.${100 - bonusRangeValue * 2})`;

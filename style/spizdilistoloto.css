@@ -1,0 +1,2801 @@
+/*
+  Copyright 2012-2021 Art. Lebedev Studio (https://www.artlebedev.ru/). All Rights Reserved.
+  @author Alexander Samilyak (aleksam@design.ru)
+  @author Alexey Khapov (chemist@design.ru)
+  @author Konstantin Tomashevich (tomash@design.ru)
+  @author Sergey Kopalkin (serge@design.ru)
+  @author Evgeny Kuleshov (groont@artlebedev.ru)
+  @author Igor Bodnar (ibodnar@artlebedev.ru)
+  @author Oleg Krasnov (krasnov@artlebedev.ru)
+  @author Yurii Rohovtsov (rohovtsov@artlebedev.ru)
+  @author Daniil Aleksandrov (dale@artlebedev.ru)
+  @author Evgeny Chugaev (chugaev@artlebedev.ru)
+*/
+
+@charset 'UTF-8';
+
+.friends1 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/1-icon.svg?8d7fe2341ecfe62a65b2032a96463708);
+    height: 63px;
+    left: -70px;
+    opacity: 0;
+    top: 100px;
+    position: absolute;
+    width: 60px
+}
+
+.friends1 .friend-icon:first-of-type {
+    -webkit-animation: friend1animation1 4.5s infinite linear;
+    -moz-animation: friend1animation1 4.5s infinite linear;
+    animation: friend1animation1 4.5s infinite linear;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.friends1 .friend-icon:nth-of-type(2) {
+    -webkit-animation: friend1animation2 4.5s infinite linear;
+    -moz-animation: friend1animation2 4.5s infinite linear;
+    animation: friend1animation2 4.5s infinite linear;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s
+}
+
+.friends1 .friend-icon:nth-of-type(3) {
+    -webkit-animation: friend1animation1 4.5s infinite linear;
+    -moz-animation: friend1animation1 4.5s infinite linear;
+    animation: friend1animation1 4.5s infinite linear;
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    animation-delay: 2.5s
+}
+
+.friends1 .friend-icon:nth-of-type(4) {
+    -webkit-animation: friend1animation2 4.5s infinite linear;
+    -moz-animation: friend1animation2 4.5s infinite linear;
+    animation: friend1animation2 4.5s infinite linear;
+    -webkit-animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+    animation-delay: 3.5s
+}
+
+@-webkit-keyframes friend1animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-130px, -150px) scale(1.2);
+        transform: translate(-130px, -150px) scale(1.2)
+    }
+}
+
+@-moz-keyframes friend1animation1 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-130px, -150px) scale(1.2);
+        transform: translate(-130px, -150px) scale(1.2)
+    }
+}
+
+@keyframes friend1animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-130px, -150px) scale(1.2);
+        -moz-transform: translate(-130px, -150px) scale(1.2);
+        transform: translate(-130px, -150px) scale(1.2)
+    }
+}
+
+@-webkit-keyframes friend1animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(-.4, .4);
+        transform: translate(0) scale(-.4, .4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-50px, -200px) scale(-1.2, 1.2);
+        transform: translate(-50px, -200px) scale(-1.2, 1.2)
+    }
+}
+
+@-moz-keyframes friend1animation2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0) scale(-.4, .4);
+        transform: translate(0) scale(-.4, .4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-50px, -200px) scale(-1.2, 1.2);
+        transform: translate(-50px, -200px) scale(-1.2, 1.2)
+    }
+}
+
+@keyframes friend1animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(-.4, .4);
+        -moz-transform: translate(0) scale(-.4, .4);
+        transform: translate(0) scale(-.4, .4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-50px, -200px) scale(-1.2, 1.2);
+        -moz-transform: translate(-50px, -200px) scale(-1.2, 1.2);
+        transform: translate(-50px, -200px) scale(-1.2, 1.2)
+    }
+}
+
+.friends2 .friend-icon {
+    -webkit-animation: friend2animation 1.5s infinite linear alternate;
+    -moz-animation: friend2animation 1.5s infinite linear alternate;
+    animation: friend2animation 1.5s infinite linear alternate;
+    height: 88px;
+    opacity: 0;
+    position: absolute;
+    width: 88px
+}
+
+.friends2 .friend-icon:first-of-type {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/2-1-icon.svg?c0a20a26cab4401946b65cd2dff54aff);
+    left: 70px;
+    top: -90px
+}
+
+.friends2 .friend-icon:nth-of-type(2) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/2-2-icon.svg?037d824d73d902af09509e15fb44cdf5);
+    left: 25px;
+    top: -55px
+}
+
+.friends2 .friend-icon:nth-of-type(3) {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/2-3-icon.svg?f4c2faa6313ff1d49c1bba8786bda564);
+    left: -50px;
+    top: -120px
+}
+
+.friends2 .friend-icon:nth-of-type(4) {
+    display: none
+}
+
+@-webkit-keyframes friend2animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.3);
+        transform: scale(.3)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-moz-keyframes friend2animation {
+    0% {
+        opacity: 1;
+        -moz-transform: scale(.3);
+        transform: scale(.3)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes friend2animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.3);
+        -moz-transform: scale(.3);
+        transform: scale(.3)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.friends3 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/3-icon.svg?7304b9a1ff729b4cdf35f908d7accd00);
+    height: 54px;
+    left: 120px;
+    opacity: 0;
+    top: 25px;
+    position: absolute;
+    width: 54px
+}
+
+.friends3 .friend-icon:first-of-type {
+    -webkit-animation: friend3animation1 3s infinite linear;
+    -moz-animation: friend3animation1 3s infinite linear;
+    animation: friend3animation1 3s infinite linear;
+    -webkit-animation-delay: .75s;
+    -moz-animation-delay: .75s;
+    animation-delay: .75s
+}
+
+.friends3 .friend-icon:nth-of-type(2) {
+    -webkit-animation: friend3animation2 3s infinite linear;
+    -moz-animation: friend3animation2 3s infinite linear;
+    animation: friend3animation2 3s infinite linear;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s
+}
+
+.friends3 .friend-icon:nth-of-type(3) {
+    -webkit-animation: friend3animation1 3s infinite linear;
+    -moz-animation: friend3animation1 3s infinite linear;
+    animation: friend3animation1 3s infinite linear;
+    -webkit-animation-delay: 2.25s;
+    -moz-animation-delay: 2.25s;
+    animation-delay: 2.25s
+}
+
+.friends3 .friend-icon:nth-of-type(4) {
+    -webkit-animation: friend3animation2 3s infinite linear;
+    -moz-animation: friend3animation2 3s infinite linear;
+    animation: friend3animation2 3s infinite linear;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s
+}
+
+@-webkit-keyframes friend3animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-90px, -50px) scale(1);
+        transform: translate(-90px, -50px) scale(1)
+    }
+}
+
+@-moz-keyframes friend3animation1 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-90px, -50px) scale(1);
+        transform: translate(-90px, -50px) scale(1)
+    }
+}
+
+@keyframes friend3animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-90px, -50px) scale(1);
+        -moz-transform: translate(-90px, -50px) scale(1);
+        transform: translate(-90px, -50px) scale(1)
+    }
+}
+
+@-webkit-keyframes friend3animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-90px, -50px) scale(1);
+        transform: translate(-90px, -50px) scale(1)
+    }
+}
+
+@-moz-keyframes friend3animation2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-90px, -50px) scale(1);
+        transform: translate(-90px, -50px) scale(1)
+    }
+}
+
+@keyframes friend3animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-90px, -50px) scale(1);
+        -moz-transform: translate(-90px, -50px) scale(1);
+        transform: translate(-90px, -50px) scale(1)
+    }
+}
+
+.friends4 .friend-icon {
+    opacity: 0;
+    position: absolute;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom
+}
+
+.friends4 .friend-icon:first-of-type {
+    -webkit-animation: friend4animation1 1.5s infinite linear alternate;
+    -moz-animation: friend4animation1 1.5s infinite linear alternate;
+    animation: friend4animation1 1.5s infinite linear alternate;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/4-1-icon.svg?07e331964d5ba778c24b37946bd4cdaa);
+    height: 65px;
+    left: 90px;
+    top: -90px;
+    width: 65px;
+    z-index: 6
+}
+
+.friends4 .friend-icon:nth-of-type(2) {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/4-2-icon.svg?dc8840f3ffaa01f358e993e18b745f4a);
+    left: 40px;
+    top: -35px;
+    width: 50px
+}
+
+.friends4 .friend-icon:nth-of-type(2),
+.friends4 .friend-icon:nth-of-type(3) {
+    -webkit-animation: friend4animation2 3s infinite linear;
+    -moz-animation: friend4animation2 3s infinite linear;
+    animation: friend4animation2 3s infinite linear;
+    height: 100px
+}
+
+.friends4 .friend-icon:nth-of-type(3) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/4-3-icon.svg?5bad97030f62421ac1bd2f9bdf0de93a);
+    left: 175px;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    width: 55px
+}
+
+.friends4 .friend-icon:nth-of-type(4) {
+    display: none
+}
+
+@-webkit-keyframes friend4animation1 {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+@-moz-keyframes friend4animation1 {
+    0% {
+        opacity: 1;
+        -moz-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+@keyframes friend4animation1 {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(-4deg);
+        -moz-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(4deg);
+        -moz-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+@-webkit-keyframes friend4animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px)
+    }
+}
+
+@-moz-keyframes friend4animation2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0;
+        -moz-transform: translateY(-100px);
+        transform: translateY(-100px)
+    }
+}
+
+@keyframes friend4animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        transform: translateY(-100px)
+    }
+}
+
+.friends5 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/5-icon.svg?bcf8fc38c3c4c6c0b9688c6e7ab60330);
+    height: 43px;
+    opacity: 0;
+    position: absolute;
+    width: 56px
+}
+
+.friends5 .friend-icon:first-of-type {
+    -webkit-animation: friend5animation1 1.5s infinite linear;
+    -moz-animation: friend5animation1 1.5s infinite linear;
+    animation: friend5animation1 1.5s infinite linear;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    -webkit-transform: translate(-25px, -50px) scale(.5);
+    -moz-transform: translate(-25px, -50px) scale(.5);
+    -ms-transform: translate(-25px, -50px) scale(.5);
+    transform: translate(-25px, -50px) scale(.5)
+}
+
+.friends5 .friend-icon:nth-of-type(2) {
+    -webkit-animation: friend5animation2 1.5s infinite linear;
+    -moz-animation: friend5animation2 1.5s infinite linear;
+    animation: friend5animation2 1.5s infinite linear;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-transform: translate(-15px, -125px);
+    -moz-transform: translate(-15px, -125px);
+    -ms-transform: translate(-15px, -125px);
+    transform: translate(-15px, -125px)
+}
+
+.friends5 .friend-icon:nth-of-type(3) {
+    -webkit-animation: friend5animation3 1.5s infinite linear;
+    -moz-animation: friend5animation3 1.5s infinite linear;
+    animation: friend5animation3 1.5s infinite linear;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+    -webkit-transform: translate(45px, -110px) scale(.75);
+    -moz-transform: translate(45px, -110px) scale(.75);
+    -ms-transform: translate(45px, -110px) scale(.75);
+    transform: translate(45px, -110px) scale(.75)
+}
+
+.friends5 .friend-icon:nth-of-type(4) {
+    display: none
+}
+
+@-webkit-keyframes friend5animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-35px, -60px) scale(.5);
+        transform: translate(-35px, -60px) scale(.5)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-55px, -80px) scale(.5);
+        transform: translate(-55px, -80px) scale(.5)
+    }
+}
+
+@-moz-keyframes friend5animation1 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(-35px, -60px) scale(.5);
+        transform: translate(-35px, -60px) scale(.5)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-55px, -80px) scale(.5);
+        transform: translate(-55px, -80px) scale(.5)
+    }
+}
+
+@keyframes friend5animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-35px, -60px) scale(.5);
+        -moz-transform: translate(-35px, -60px) scale(.5);
+        transform: translate(-35px, -60px) scale(.5)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-55px, -80px) scale(.5);
+        -moz-transform: translate(-55px, -80px) scale(.5);
+        transform: translate(-55px, -80px) scale(.5)
+    }
+}
+
+@-webkit-keyframes friend5animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-35px, -125px);
+        transform: translate(-35px, -125px)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-35px, -135px);
+        transform: translate(-35px, -135px)
+    }
+}
+
+@-moz-keyframes friend5animation2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(-35px, -125px);
+        transform: translate(-35px, -125px)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-35px, -135px);
+        transform: translate(-35px, -135px)
+    }
+}
+
+@keyframes friend5animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(-35px, -125px);
+        -moz-transform: translate(-35px, -125px);
+        transform: translate(-35px, -125px)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-35px, -135px);
+        -moz-transform: translate(-35px, -135px);
+        transform: translate(-35px, -135px)
+    }
+}
+
+@-webkit-keyframes friend5animation3 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(45px, -110px) scale(.75);
+        transform: translate(45px, -110px) scale(.75)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(55px, -120px) scale(.75);
+        transform: translate(55px, -120px) scale(.75)
+    }
+}
+
+@-moz-keyframes friend5animation3 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(45px, -110px) scale(.75);
+        transform: translate(45px, -110px) scale(.75)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(55px, -120px) scale(.75);
+        transform: translate(55px, -120px) scale(.75)
+    }
+}
+
+@keyframes friend5animation3 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(45px, -110px) scale(.75);
+        -moz-transform: translate(45px, -110px) scale(.75);
+        transform: translate(45px, -110px) scale(.75)
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(55px, -120px) scale(.75);
+        -moz-transform: translate(55px, -120px) scale(.75);
+        transform: translate(55px, -120px) scale(.75)
+    }
+}
+
+.friends6 .friend-icon {
+    opacity: 0;
+    position: absolute;
+    z-index: 4
+}
+
+.friends6 .friend-icon:first-of-type {
+    -webkit-animation: friend6animation1 2s forwards;
+    -moz-animation: friend6animation1 2s forwards;
+    animation: friend6animation1 2s forwards;
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/6-1-icon.svg?f4bc5487b15f521914ed70b74677d6da);
+    height: 34px;
+    left: 195px;
+    top: -15px;
+    width: 54px
+}
+
+.friends6 .friend-icon:nth-of-type(2) {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/6-2-icon.svg?6bf06a9d3df6302ee94ec318f57f7df5);
+    height: 21px;
+    left: 240px;
+    top: 55px;
+    width: 9px
+}
+
+.friends6 .friend-icon:nth-of-type(2),
+.friends6 .friend-icon:nth-of-type(3) {
+    -webkit-animation: friend6animation2 2s infinite linear;
+    -moz-animation: friend6animation2 2s infinite linear;
+    animation: friend6animation2 2s infinite linear
+}
+
+.friends6 .friend-icon:nth-of-type(3) {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/6-3-icon.svg?13c1c7db0092b9f16a1f6410fb24bf2e);
+    height: 32px;
+    left: 230px;
+    top: 40px;
+    width: 12px
+}
+
+.friends6 .friend-icon:nth-of-type(4) {
+    display: none
+}
+
+@-webkit-keyframes friend6animation1 {
+
+    0%,
+    5% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes friend6animation1 {
+
+    0%,
+    5% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes friend6animation1 {
+
+    0%,
+    5% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes friend6animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px)
+    }
+}
+
+@-moz-keyframes friend6animation2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0;
+        -moz-transform: translateY(-100px);
+        transform: translateY(-100px)
+    }
+}
+
+@keyframes friend6animation2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+        transform: translateY(-80px)
+    }
+
+    10% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    90% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        transform: translateY(-100px)
+    }
+}
+
+.friends7 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/7-icon.svg?b817b8315c7028e785609d6b21e0acb6);
+    display: none;
+    height: 64px;
+    left: 60px;
+    opacity: 0;
+    top: -150px;
+    position: absolute;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+    width: 71px
+}
+
+.friends7 .friend-icon:first-of-type {
+    -webkit-animation: friend7animation .5s infinite linear alternate;
+    -moz-animation: friend7animation .5s infinite linear alternate;
+    animation: friend7animation .5s infinite linear alternate;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    display: block
+}
+
+@-webkit-keyframes friend7animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+@-moz-keyframes friend7animation {
+    0% {
+        opacity: 1;
+        -moz-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+@keyframes friend7animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(-4deg);
+        -moz-transform: rotate(-4deg);
+        transform: rotate(-4deg)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(4deg);
+        -moz-transform: rotate(4deg);
+        transform: rotate(4deg)
+    }
+}
+
+.friends8 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/8-icon.svg?dbabe3fff6f8062605f72c6c559ca5de);
+    display: none;
+    height: 65px;
+    left: -20px;
+    opacity: 0;
+    top: -90px;
+    position: absolute;
+    width: 65px;
+    z-index: 2
+}
+
+.friends8 .friend-icon:first-of-type {
+    -webkit-animation: friend8animation .5s infinite linear;
+    -moz-animation: friend8animation .5s infinite linear;
+    animation: friend8animation .5s infinite linear;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
+    display: block
+}
+
+@-webkit-keyframes friend8animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@-moz-keyframes friend8animation {
+    0% {
+        opacity: 1;
+        -moz-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes friend8animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(1turn);
+        -moz-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+.friends9 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/9-icon.svg?4f30ebb8fb2f24ba5d2642941d3d4447);
+    display: none;
+    height: 58px;
+    left: 176px;
+    opacity: 0;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    transform-origin: bottom;
+    top: -150px;
+    position: absolute;
+    width: 98px
+}
+
+.friends9 .friend-icon:first-of-type {
+    -webkit-animation: friend9animation .5s infinite linear alternate;
+    -moz-animation: friend9animation .5s infinite linear alternate;
+    animation: friend9animation .5s infinite linear alternate;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    display: block
+}
+
+@-webkit-keyframes friend9animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+}
+
+@-moz-keyframes friend9animation {
+    0% {
+        opacity: 1;
+        -moz-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+}
+
+@keyframes friend9animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        transform: rotate(-5deg)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        transform: rotate(5deg)
+    }
+}
+
+.friends10 .friend-icon {
+    background: no-repeat url(/f/media/stoloto/invite-friends/friends/10-icon.svg?f2778ea0ba5b11f913575fafe2e45f7a);
+    display: none;
+    height: 55px;
+    left: 40px;
+    opacity: 0;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.5);
+    top: -190px;
+    position: absolute;
+    width: 47px
+}
+
+.friends10 .friend-icon:first-of-type {
+    -webkit-animation: friend10animation .5s infinite linear alternate;
+    -moz-animation: friend10animation .5s infinite linear alternate;
+    animation: friend10animation .5s infinite linear alternate;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    display: block
+}
+
+@-webkit-keyframes friend10animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-moz-keyframes friend10animation {
+    0% {
+        opacity: 1;
+        -moz-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        opacity: 1;
+        -moz-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes friend10animation {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(.7);
+        -moz-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+#layout>.h1,
+#layout>h1,
+.layout_header .layout_header_inner,
+.layout_header h1,
+.main_header h1,
+.main_subnavigation h2 {
+    color: #fff
+}
+
+.layout_header_inner .pseudo,
+.layout_header_inner a {
+    color: #fff;
+    border-color: hsla(0, 0%, 100%, .3)
+}
+
+.layout_header_inner .tabs_switcher .pseudo,
+.layout_header_inner .tabs_switcher a {
+    color: #000;
+    border-color: rgba(0, 0, 0, .3)
+}
+
+.global_logo,
+.loader {
+    color: #fff
+}
+
+html.with_crisis2020_logo .global_logo .for_user,
+html.with_crisis2020_logo .global_logo .for_vip {
+    background-image: url(/f/media/superglobal/crisis_logos/crisis_logo_alt.svg?2a4ac108330d86d5316cfaa5a65ef29e)
+}
+
+.thermo,
+.thermo a:visited {
+    color: #fff;
+    border-color: hsla(0, 0%, 100%, .3)
+}
+
+#footer,
+#footer .navigation_title,
+#navigation,
+#navigation .navigation_title,
+.share_page,
+.share_page .navigation_title {
+    color: #fff
+}
+
+#content+.drawings_list .pseudo,
+#content+.drawings_list a,
+#content+.drawings_list span,
+#footer .pseudo,
+#footer a,
+#footer a:visited,
+#footer span,
+#navigation .pseudo,
+#navigation a,
+#navigation a:visited,
+#navigation span,
+#subnavigation .pseudo,
+#subnavigation a,
+#subnavigation span,
+.main_header .pseudo,
+.main_header a,
+.main_header span,
+.share_page .pseudo,
+.share_page a,
+.share_page a:visited,
+.share_page span,
+.thermo .pseudo,
+.thermo a,
+.thermo span {
+    color: #fff;
+    border-color: hsla(0, 0%, 100%, .3)
+}
+
+#content+.drawings_list {
+    color: hsla(0, 0%, 100%, .8)
+}
+
+.game_slot.bingo .manual_stage_footer .for_loading,
+.game_slot.bingo .quickies .for_loading,
+.game_slot.bingo .title-and-description {
+    color: #fff;
+    margin-bottom: 24px;
+    margin-top: 32px
+}
+
+.left_panel .holder .panel_content {
+    color: #fff
+}
+
+.left_panel .holder .panel_content .counter a,
+.left_panel .holder .panel_content .no_visited a:visited,
+.left_panel .holder .panel_content .pseudo,
+.left_panel .holder .panel_content .pseudo:visited,
+.left_panel .holder .panel_content a,
+.left_panel .holder .panel_content a.no_visited:visited {
+    color: #fff;
+    border-color: hsla(0, 0%, 100%, .3)
+}
+
+.left_panel .holder .panel_content .focus_close {
+    color: #414042;
+    border-color: rgba(65, 64, 66, .3)
+}
+
+.left_panel .holder .panel_content .lang span {
+    color: #fff;
+    border-color: hsla(0, 0%, 100%, .3)
+}
+
+.left_panel .holder .panel_content .private_panel .border {
+    background: hsla(0, 0%, 100%, .1)
+}
+
+.left_panel .holder .panel_content .ident_level,
+.left_panel .holder .panel_content .ident_status {
+    color: hsla(0, 0%, 100%, .7)
+}
+
+body {
+    background: #fff
+}
+
+#page {
+    min-width: 1050px;
+    overflow: hidden
+}
+
+#layout {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none
+}
+
+.layout_container {
+    opacity: 0;
+    -webkit-transform: translateY(-150px);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    transform: translateY(-150px);
+    -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+    transition: opacity .5s ease, -webkit-transform .5s ease;
+    -moz-transition: opacity ease .5s, transform ease .5s, -moz-transform ease .5s;
+    transition: opacity .5s ease, transform .5s ease;
+    transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease
+}
+
+.layout_container.initialized {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+.layout_container h1,
+.layout_container h2 {
+    margin: 0 auto;
+    text-align: center
+}
+
+.layout_container section {
+    padding: 75px 0
+}
+
+.layout_container section:first-child {
+    padding-top: 25px
+}
+
+.left_panel .holder .panel_content .pseudo,
+.left_panel .holder .panel_content a {
+    color: #cecccc;
+    border-color: hsla(0, 2%, 80%, .3);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s
+}
+
+.left_panel .holder .panel_content.black .pseudo,
+.left_panel .holder .panel_content.black a {
+    color: #000;
+    border-color: rgba(0, 0, 0, .3)
+}
+
+section .section-container {
+    margin: 0 auto;
+    max-width: 1100px
+}
+
+section.friends {
+    color: #fff;
+    position: relative
+}
+
+section.friends:after {
+    background-image: url(/f/media/stoloto/invite-friends/oval.svg?d782e182a5cc1d01a93ceb8311b90db0);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.ie11 section.friends:after {
+    background-size: 500% !important
+}
+
+section.friends:before {
+    background-image: url(/f/media/stoloto/invite-friends/bg.svg?80b6a776239ab8ef0bf1e583115217b2);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: -150px;
+    min-width: 990px;
+    padding-bottom: 76px;
+    position: absolute;
+    top: -76px;
+    width: 100vw;
+    z-index: -1
+}
+
+.ie11 section.friends:before {
+    background-size: 500% !important
+}
+
+section.friends .pseudo,
+section.friends a {
+    color: #fff;
+    border-color: hsla(0, 0%, 100%, .3)
+}
+
+section.friends .section-container p {
+    font-size: 2.1rem;
+    font-weight: 300;
+    text-align: center
+}
+
+section.friends .section-container .view {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: center
+}
+
+section.friends .section-container .view p {
+    font-size: 1.8rem
+}
+
+section.friends .friends-bonuses {
+    margin-bottom: 90px;
+    margin-top: 100px
+}
+
+section.friends .friends-bonuses:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+section.friends .friends-bonuses .friends-bonus,
+section.friends .friends-bonuses .friends-phone {
+    float: left;
+    min-height: 575px;
+    width: 50%
+}
+
+section.friends .friends-bonuses .friends-phone {
+    position: relative;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg)
+}
+
+section.friends .friends-bonuses .friends-phone .phone {
+    background: #36abeb;
+    border: 5px solid #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    bottom: 75px;
+    height: 448px;
+    position: absolute;
+    right: 100px;
+    width: 252px
+}
+
+section.friends .friends-bonuses .friends-phone .phone:after,
+section.friends .friends-bonuses .friends-phone .phone:before {
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    content: '';
+    height: 100%;
+    position: absolute;
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out;
+    width: 100%;
+    z-index: -1
+}
+
+section.friends .friends-bonuses .friends-phone .phone:after {
+    background: #1366b5;
+    opacity: .4;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 45% 110%;
+    -moz-transform-origin: 45% 110%;
+    -ms-transform-origin: 45% 110%;
+    transform-origin: 45% 110%
+}
+
+.initialized section.friends .friends-bonuses .friends-phone .phone:after {
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg)
+}
+
+section.friends .friends-bonuses .friends-phone .phone:before {
+    background: #1366b5;
+    opacity: .2;
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transform-origin: 75% 110%;
+    -moz-transform-origin: 75% 110%;
+    -ms-transform-origin: 75% 110%;
+    transform-origin: 75% 110%
+}
+
+.initialized section.friends .friends-bonuses .friends-phone .phone:before {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg)
+}
+
+section.friends .friends-bonuses .friends-phone .phone img {
+    bottom: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: bottom center;
+    -moz-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    will-change: transform
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:first-child {
+    -webkit-border-bottom-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    -webkit-transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    transform-origin: bottom right
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(2) {
+    right: -15px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(3) {
+    right: -55px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(4) {
+    right: -10px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(5) {
+    right: -5px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(6) {
+    right: -45px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(7) {
+    right: -15px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-child(9) {
+    bottom: 25px;
+    right: -110px
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:first-of-type {
+    -webkit-transition-delay: .01s;
+    -moz-transition-delay: .01s;
+    transition-delay: .01s;
+    z-index: 9
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(2) {
+    -webkit-transition-delay: .02s;
+    -moz-transition-delay: .02s;
+    transition-delay: .02s;
+    z-index: 8
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(3) {
+    -webkit-transition-delay: .03s;
+    -moz-transition-delay: .03s;
+    transition-delay: .03s;
+    z-index: 7
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(4) {
+    -webkit-transition-delay: .04s;
+    -moz-transition-delay: .04s;
+    transition-delay: .04s;
+    z-index: 6
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(5) {
+    -webkit-transition-delay: .05s;
+    -moz-transition-delay: .05s;
+    transition-delay: .05s;
+    z-index: 5
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(6) {
+    -webkit-transition-delay: .06s;
+    -moz-transition-delay: .06s;
+    transition-delay: .06s;
+    z-index: 4
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(7) {
+    -webkit-transition-delay: .07s;
+    -moz-transition-delay: .07s;
+    transition-delay: .07s;
+    z-index: 3
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(8) {
+    -webkit-transition-delay: .08s;
+    -moz-transition-delay: .08s;
+    transition-delay: .08s;
+    z-index: 2
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(9) {
+    -webkit-transition-delay: .09s;
+    -moz-transition-delay: .09s;
+    transition-delay: .09s;
+    z-index: 1
+}
+
+section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(10) {
+    -webkit-transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    transition-delay: .1s;
+    z-index: 0
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends1 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:first-child {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(2),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(3),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(5),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(7),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends2 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:first-child {
+    -webkit-transform: scale(.76);
+    -moz-transform: scale(.76);
+    -ms-transform: scale(.76);
+    transform: scale(.76)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(2) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(3),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(5),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(7),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends3 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:first-child {
+    -webkit-transform: scale(.74);
+    -moz-transform: scale(.74);
+    -ms-transform: scale(.74);
+    transform: scale(.74)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(2) {
+    -webkit-transform: scale(.96);
+    -moz-transform: scale(.96);
+    -ms-transform: scale(.96);
+    transform: scale(.96)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(3) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(5),
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(7),
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends4 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:first-child {
+    -webkit-transform: scale(.72);
+    -moz-transform: scale(.72);
+    -ms-transform: scale(.72);
+    transform: scale(.72)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(2) {
+    -webkit-transform: scale(.94);
+    -moz-transform: scale(.94);
+    -ms-transform: scale(.94);
+    transform: scale(.94)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(3) {
+    -webkit-transform: scale(.92);
+    -moz-transform: scale(.92);
+    -ms-transform: scale(.92);
+    transform: scale(.92)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(4) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(5),
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(7),
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:first-child {
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    -ms-transform: scale(.7);
+    transform: scale(.7)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(2) {
+    -webkit-transform: scale(.92);
+    -moz-transform: scale(.92);
+    -ms-transform: scale(.92);
+    transform: scale(.92)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(3) {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(4) {
+    -webkit-transform: scale(.94);
+    -moz-transform: scale(.94);
+    -ms-transform: scale(.94);
+    transform: scale(.94)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(5) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(7),
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:first-child {
+    -webkit-transform: scale(.68);
+    -moz-transform: scale(.68);
+    -ms-transform: scale(.68);
+    transform: scale(.68)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(2),
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(3) {
+    -webkit-transform: scale(.88);
+    -moz-transform: scale(.88);
+    -ms-transform: scale(.88);
+    transform: scale(.88)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(5) {
+    -webkit-transform: scale(.92);
+    -moz-transform: scale(.92);
+    -ms-transform: scale(.92);
+    transform: scale(.92)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(6) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(7),
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:first-child {
+    -webkit-transform: scale(.66);
+    -moz-transform: scale(.66);
+    -ms-transform: scale(.66);
+    transform: scale(.66)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(2),
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(3) {
+    -webkit-transform: scale(.86);
+    -moz-transform: scale(.86);
+    -ms-transform: scale(.86);
+    transform: scale(.86)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(5) {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(6) {
+    -webkit-transform: scale(.96);
+    -moz-transform: scale(.96);
+    -ms-transform: scale(.96);
+    transform: scale(.96)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(7) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(8),
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:first-child {
+    -webkit-transform: scale(.64);
+    -moz-transform: scale(.64);
+    -ms-transform: scale(.64);
+    transform: scale(.64)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(2),
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(3) {
+    -webkit-transform: scale(.84);
+    -moz-transform: scale(.84);
+    -ms-transform: scale(.84);
+    transform: scale(.84)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(5) {
+    -webkit-transform: scale(.88);
+    -moz-transform: scale(.88);
+    -ms-transform: scale(.88);
+    transform: scale(.88)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(7) {
+    -webkit-transform: scale(.94);
+    -moz-transform: scale(.94);
+    -ms-transform: scale(.94);
+    transform: scale(.94)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(8) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(9),
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:first-child {
+    -webkit-transform: scale(.62);
+    -moz-transform: scale(.62);
+    -ms-transform: scale(.62);
+    transform: scale(.62)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(2),
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(3) {
+    -webkit-transform: scale(.82);
+    -moz-transform: scale(.82);
+    -ms-transform: scale(.82);
+    transform: scale(.82)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(5) {
+    -webkit-transform: scale(.86);
+    -moz-transform: scale(.86);
+    -ms-transform: scale(.86);
+    transform: scale(.86)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(7) {
+    -webkit-transform: scale(.92);
+    -moz-transform: scale(.92);
+    -ms-transform: scale(.92);
+    transform: scale(.92)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(8) {
+    -webkit-transform: scale(.98);
+    -moz-transform: scale(.98);
+    -ms-transform: scale(.98);
+    transform: scale(.98)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(9) {
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(10) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img {
+    display: block
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:first-child {
+    -webkit-transform: scale(.6);
+    -moz-transform: scale(.6);
+    -ms-transform: scale(.6);
+    transform: scale(.6)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(2),
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(3) {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(4),
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(5) {
+    -webkit-transform: scale(.84);
+    -moz-transform: scale(.84);
+    -ms-transform: scale(.84);
+    transform: scale(.84)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(6),
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(7) {
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(8) {
+    -webkit-transform: scale(.96);
+    -moz-transform: scale(.96);
+    -ms-transform: scale(.96);
+    transform: scale(.96)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(9) {
+    -webkit-transform: scale(.93);
+    -moz-transform: scale(.93);
+    -ms-transform: scale(.93);
+    transform: scale(.93)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(10) {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends2 img:first-child {
+    -webkit-border-bottom-right-radius: 33px;
+    border-bottom-right-radius: 33px
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends3 img:first-child,
+section.friends .friends-bonuses .friends-phone .phone.friends4 img:first-child,
+section.friends .friends-bonuses .friends-phone .phone.friends5 img:first-child {
+    -webkit-border-bottom-right-radius: 36px;
+    border-bottom-right-radius: 36px
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends6 img:first-child {
+    -webkit-border-bottom-right-radius: 40px;
+    border-bottom-right-radius: 40px
+}
+
+section.friends .friends-bonuses .friends-phone .phone.friends7 img:first-child,
+section.friends .friends-bonuses .friends-phone .phone.friends8 img:first-child,
+section.friends .friends-bonuses .friends-phone .phone.friends9 img:first-child,
+section.friends .friends-bonuses .friends-phone .phone.friends10 img:first-child {
+    -webkit-border-bottom-right-radius: 44px;
+    border-bottom-right-radius: 44px
+}
+
+section.friends .friends-bonuses .friends-bonus .wrapper {
+    margin: 190px 0 0 120px
+}
+
+section.friends .friends-bonuses .friends-bonus .count {
+    font-size: 2.1rem;
+    line-height: 24px
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus,
+section.friends .friends-bonuses .friends-bonus .special-bonus {
+    margin-top: 20px
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games,
+section.friends .friends-bonuses .friends-bonus .special-bonus .games {
+    display: inline-block;
+    -webkit-transform: translate(8px, 4px);
+    -moz-transform: translate(8px, 4px);
+    -ms-transform: translate(8px, 4px);
+    transform: translate(8px, 4px)
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon,
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon {
+    -webkit-animation: .5s smoothLeft forwards;
+    -moz-animation: .5s smoothLeft forwards;
+    animation: .5s smoothLeft forwards;
+    background-size: 85% auto;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    height: 45px;
+    margin-right: -25px;
+    opacity: 0;
+    position: relative;
+    -webkit-transform: translateX(25px);
+    -moz-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+    width: 45px
+}
+
+.edge section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon,
+.edge section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon,
+.safari section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon,
+.safari section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon {
+    background-position: 50% !important;
+    background-size: 85% auto !important
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:first-of-type,
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:first-of-type {
+    -webkit-animation-delay: .05s;
+    -moz-animation-delay: .05s;
+    animation-delay: .05s;
+    z-index: 9
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(2),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(2) {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    animation-delay: .1s;
+    z-index: 8
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(3),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(3) {
+    -webkit-animation-delay: .15s;
+    -moz-animation-delay: .15s;
+    animation-delay: .15s;
+    z-index: 7
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(4),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(4) {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    animation-delay: .2s;
+    z-index: 6
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(5),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(5) {
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;
+    animation-delay: .25s;
+    z-index: 5
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(6),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(6) {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
+    z-index: 4
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(7),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(7) {
+    -webkit-animation-delay: .35s;
+    -moz-animation-delay: .35s;
+    animation-delay: .35s;
+    z-index: 3
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(8),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(8) {
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    animation-delay: .4s;
+    z-index: 2
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(9),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(9) {
+    -webkit-animation-delay: .45s;
+    -moz-animation-delay: .45s;
+    animation-delay: .45s;
+    z-index: 1
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(10),
+section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(10) {
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+    z-index: 0
+}
+
+@-webkit-keyframes smoothLeft {
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@-moz-keyframes smoothLeft {
+    to {
+        opacity: 1;
+        -moz-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes smoothLeft {
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus ins,
+section.friends .friends-bonuses .friends-bonus .special-bonus ins {
+    display: inline-block;
+    font-size: 5.4rem;
+    line-height: 54px
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus div,
+section.friends .friends-bonuses .friends-bonus .special-bonus div {
+    font-size: 1.6rem;
+    line-height: 16px
+}
+
+section.friends .friends-bonuses .friends-bonus .bonus ins:after {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: 'b';
+    color: #5fff61;
+    font-size: 4rem;
+    margin-left: 10px
+}
+
+section.friends .friends-bonuses .friends-bonus .pretty_button.type_primary {
+    margin-top: 20px
+}
+
+section.friends .invite-friend-scale {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 120px;
+    -webkit-transform: translateY(140px) rotate(8deg);
+    -moz-transform: translateY(140px) rotate(8deg);
+    -ms-transform: translateY(140px) rotate(8deg);
+    transform: translateY(140px) rotate(8deg);
+    width: 100px;
+    will-change: transform
+}
+
+section.friends .invite-friend-scale .scale {
+    margin: 0 auto
+}
+
+section.friends .invite-friend-scale .scale.ui-slider.white {
+    background: #83caf2
+}
+
+section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-line {
+    background: #83caf2;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    height: 7px;
+    left: -22px;
+    position: absolute;
+    top: 12px;
+    width: 7px
+}
+
+section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-label {
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    will-change: transform
+}
+
+section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-pip-inrange .ui-slider-line {
+    background: currentColor
+}
+
+section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-pip {
+    opacity: 1;
+    width: 0
+}
+
+section.friends .invite-friend-scale .scale.ui-slider .ui-slider-pip-hide {
+    display: block
+}
+
+section.friends .invite-friend-scale .scale.ui-slider .ui-slider-tip {
+    display: none
+}
+
+section.status a {
+    display: table;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 40px auto -50px;
+    text-align: center
+}
+
+section.status .section-container {
+    font-size: 1.6rem;
+    max-width: 420px
+}
+
+section.status .section-container:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+section.status .section-container .bonuses,
+section.status .section-container .friends {
+    font-size: 6rem
+}
+
+section.status .section-container .bonuses:after,
+section.status .section-container .friends:after {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #5fff61;
+    font-size: 3.5rem;
+    margin-left: 10px;
+    position: relative;
+    top: -4px
+}
+
+section.status .section-container .friends:after {
+    content: 'î¤£';
+    font-weight: 600
+}
+
+section.status .section-container .bonuses:after {
+    content: 'b'
+}
+
+section.faq .section-container:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+section.faq .section-container .column .item {
+    line-height: 24px;
+    margin: 50px
+}
+
+section.faq .section-container .column .question {
+    font-size: 2.1rem;
+    margin-bottom: 15px
+}
+
+section.faq .section-container .column .answer {
+    font-size: 1.6rem;
+    font-weight: 300
+}
+
+section.faq .pretty_button {
+    display: table;
+    margin: 0 auto
+}
+
+.repost {
+    font-style: italic;
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 25px 40px;
+    position: relative
+}
+
+.repost:before {
+    border: 1px solid #fff;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    content: '';
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-135px, -50%);
+    -moz-transform: translate(-135px, -50%);
+    -ms-transform: translate(-135px, -50%);
+    transform: translate(-135px, -50%);
+    width: 150px
+}
+
+.carousel .carousel_inner img {
+    margin-right: 25%;
+    max-width: 540px;
+    width: 75%
+}
+
+.carousel .carousel_inner .description {
+    font-style: italic;
+    font-size: 1.4rem;
+    left: 26px;
+    line-height: 22px;
+    margin-left: 70%;
+    max-width: 250px;
+    position: absolute;
+    text-align: left;
+    top: 60px
+}
+
+.modularity_4 .carousel .carousel_inner .description,
+.modularity_5 .carousel .carousel_inner .description {
+    margin-left: 62%
+}
+
+.carousel .carousel_inner .description:before {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    content: 'î¦†';
+    font-size: 3.1rem;
+    position: absolute;
+    margin-top: -45px
+}
+
+.column {
+    float: left;
+    width: 50%
+}
+
+.tabs_switcher {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 30px 0
+}
+
+.tabs_switcher:before {
+    background: #fff;
+    margin: 0 -290px 0 -150px;
+    opacity: .3
+}
+
+.tabs_switcher .selected {
+    border-color: #fff
+}
+
+.tabs_switcher .pseudo,
+.tabs_switcher .selected .pseudo,
+.tabs_switcher .selected .pseudo:hover {
+    color: #fff !important;
+    border-color: hsla(0, 0%, 100%, .3) !important;
+    font-size: 1.8rem;
+    font-weight: 300
+}
+
+.tabs_switcher .selected .pseudo,
+.tabs_switcher .selected .pseudo:hover {
+    font-weight: 400
+}
+
+.tabs_views {
+    text-align: center
+}
+
+.tabs_views .social_buttons {
+    margin-bottom: 30px
+}
+
+.tabs_views .indicators {
+    display: inline-block
+}
+
+.tabs_views .indicators li {
+    margin: 0 3px
+}
+
+.view_social>p {
+    margin-bottom: 25px
+}
+
+.view_social .social_buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 55px 0 35px
+}
+
+.view_social .social_buttons li {
+    margin-right: 35px
+}
+
+.view_social .social_buttons li a {
+    -webkit-box-shadow: 0 10px 8px -8px rgba(0, 0, 0, .5);
+    box-shadow: 0 10px 8px -8px rgba(0, 0, 0, .5);
+    -webkit-transition: -webkit-box-shadow .2s;
+    transition: -webkit-box-shadow .2s;
+    -moz-transition: box-shadow .2s;
+    transition: box-shadow .2s;
+    transition: box-shadow .2s, -webkit-box-shadow .2s
+}
+
+.view_social .social_buttons li a:hover {
+    -webkit-box-shadow: 0 5px 8px -8px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 8px -8px rgba(0, 0, 0, .5);
+    opacity: 1
+}
+
+.view_link .pseudo {
+    font-size: 2.1rem
+}
+
+.view_link .pseudo:after {
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: 'î¤´';
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 5px
+}
+
+.view_email .pretty_form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative
+}
+
+.view_email .pretty_form .fader_loader {
+    background: transparent
+}
+
+.view_email .pretty_form .fader_loader.show+.pretty_form_inlined {
+    opacity: .33
+}
+
+.view_email .pretty_form .pretty_form_inlined {
+    margin-top: 25px
+}
+
+.view_email .pretty_form .pretty_form_inlined .pretty_form_item label {
+    color: #fff
+}
+
+.view_email .pretty_form .pretty_form_inlined .pretty_form_item input {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    width: 350px
+}
+
+.view_email .pretty_form .pretty_form_inlined .pretty_form_item input:-webkit-autofill+label,
+.view_email .pretty_form .pretty_form_inlined .pretty_form_item input:-webkit-autofill:active+label,
+.view_email .pretty_form .pretty_form_inlined .pretty_form_item input:-webkit-autofill:focus+label,
+.view_email .pretty_form .pretty_form_inlined .pretty_form_item input:-webkit-autofill:hover+label {
+    color: #000 !important
+}
+
+.view_email .pretty_form .pretty_form_inlined .error_exceed,
+.view_email .pretty_form .pretty_form_inlined .error_exists {
+    display: block
+}
+
+.view_email .pretty_form .pretty_form_inlined .success_alert,
+.view_email .pretty_form .pretty_form_inlined .zf-error {
+    font-size: 1.4rem;
+    position: absolute;
+    z-index: 2
+}
+
+.view_email .pretty_form .pretty_form_inlined .success_alert:not(.not_display)+.success_alert,
+.view_email .pretty_form .pretty_form_inlined .zf-error:not(.not_display)+.success_alert {
+    display: none
+}
+
+.tooltip_inner {
+    max-width: 450px
+}
+
+.pretty_button.outline_white,
+.pretty_button.outline_white[disabled] {
+    background: #fff;
+    border-color: transparent !important
+}
+
+#footer {
+    color: #000
+}
+
+#footer .pseudo,
+#footer a,
+#footer a:visited {
+    color: #000;
+    border-color: rgba(0, 0, 0, .3)
+}

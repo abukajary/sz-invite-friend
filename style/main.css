@@ -358,3 +358,69 @@ picture img {
 .dekstop-flex.header-info {
     display: none;
 }
+.interactive-element {
+    position: absolute;
+    width: 50px;
+    right: 0;
+    top: 50%;
+    animation: friend1animation1 4.5s infinite linear .5s; 
+}
+.interactive-element:nth-of-type(2) {
+    animation: friend1animation2 4.5s infinite linear 1s; 
+}
+.interactive-element:nth-of-type(3) {
+    animation: friend1animation1 4.5s infinite linear 1.5s; 
+}
+.interactive-element:nth-of-type(4) {
+    animation: friend1animation2 4.5s infinite linear 2s; 
+}
+@keyframes interactive1 {
+   0% {}
+   50% {
+    transform: translateX(100%) scale(1.2);
+    opacity: 0;
+   }
+   100% {
+       opacity: 0;
+       /* transform: translate(0%); */
+   }
+}
+@keyframes friend1animation2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translate(0) scale(-.4, .4);
+        transform: translate(0) scale(-.4, .4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -moz-transform: translate(-50px, -200px) scale(-1.2, 1.2);
+        transform: translate(-50px, -200px) scale(-1.2, 1.2)
+    }
+}
+
+@keyframes friend1animation1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0) scale(.4);
+        -moz-transform: translate(0) scale(.4);
+        transform: translate(0) scale(.4)
+    }
+
+    10% {
+        opacity: 1
+    }
+
+    80%,
+    to {
+        opacity: 0;
+        -webkit-transform: translate(-130px, -150px) scale(1.2);
+        -moz-transform: translate(-130px, -150px) scale(1.2);
+        transform: translate(-130px, -150px) scale(1.2)
+    }
+}
