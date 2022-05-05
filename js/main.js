@@ -57,6 +57,7 @@ if(window.innerWidth > 900)  {
 console.log(bonusBoxHeight[0].clientHeight)
 bonusBoxHeight[1].style.height = bonusBoxHeight[0].clientHeight + 'px';
 }
+
 bonusRange.addEventListener("input", () => {
     if (kostyl <= bonusRange.value) {
         sliderAdd(parseInt(bonusRange.value));
@@ -88,5 +89,11 @@ bonusRange.addEventListener("input", () => {
             e.style.height = 'auto'
         })
         console.log('123 - 321')
+    }
+
+    if(window.innerWidth < 900)  {
+      if (bonusRange.value === "0") {
+        activeImg[0].style.transform = 'scale(1.3)';
+    }
     }
 });
