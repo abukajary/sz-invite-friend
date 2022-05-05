@@ -52,7 +52,11 @@ function sliderRemove(bonusRangeValue) {
 
 }
 let kostyl = 0
-
+if(window.innerWidth > 900)  {
+  let bonusBoxHeight = document.querySelectorAll('.bonus-box');
+console.log(bonusBoxHeight[0].clientHeight)
+bonusBoxHeight[1].style.height = bonusBoxHeight[0].clientHeight + 'px';
+}
 bonusRange.addEventListener("input", () => {
     if (kostyl <= bonusRange.value) {
         sliderAdd(parseInt(bonusRange.value));

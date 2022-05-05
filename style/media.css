@@ -117,12 +117,15 @@ line-height: 25px;
         font-size: 18px;
         margin-top: 40px;
     }
-
+    .bonus-info {
+        padding-top: 134px;
+    }
     .bonus-info--content h2 {
         font-size: 30px;
     }
 
     .bonus-box {
+        padding: 40px;
         margin: unset;
     }
 
