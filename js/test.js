@@ -1,4 +1,4 @@
-'use static'
+// 'use static'
 
 const bonusText = document.querySelectorAll(".bonus-calc--num");
 const bonusRange = document.querySelector(".js-range-slider");
@@ -23,33 +23,7 @@ function animateValue(bonusQuantity, start, end, duration) {
 }
 animateValue(bonusQuantity, 0, 2000, 500);
 
-bonusRange.addEventListener("input", () => {
-    const value = Number(bonusRange.value) / 100;
-    bonusRange.style.setProperty("--thumb-rotate", `${value * 10720}deg`);
 
-    sliderAdd(parseInt(bonusRange.value));
-    sliderRemove(parseInt(bonusRange.value));
-
-    if (bonusRange.value === "0") {
-        // activeImg[0].style.transform = `scale(1.3)`;
-        bonusText.innerHTML = `2 000`;
-        inviteFriendQuantity.innerHTML = `1 друга`
-        activeImg[0].classList.remove('active');
-        if (bonusQuantity.innerHTML !== "2000") {
-            animateValue(bonusQuantity, 4000, 2000, 500);
-        }
-        interactiveItems.forEach((e) => {
-            e.style.height = 'auto'
-        })
-    }
-    if (bonusRange.value >= "1") {
-        activeImg[0].classList.add('active');
-        // animateValue(obj, 0, 2000, 100);
-        interactiveItems.forEach((e) => {
-            e.style.height = '0px'
-        })
-    }
-});
 
 function sliderAdd(bonusRangeValue) {
 
@@ -90,3 +64,39 @@ bonusBoxHeight[1].style.height = bonusBoxHeight[0].clientHeight + 'px';
 }
 window.onscroll = () => {
 }
+
+bonusRange.addEventListener("input", () => {
+    const value = Number(bonusRange.value) / 100;
+    bonusRange.style.setProperty("--thumb-rotate", `${value * 10720}deg`);
+
+    sliderAdd(parseInt(bonusRange.value));
+    sliderRemove(parseInt(bonusRange.value));
+    if (bonusRange.value < "1") {
+    
+        // if (bonusQuantity.innerHTML !== "2000") {
+            animateValue(bonusQuantity, 2000, 2000, 500);
+        // }
+
+    }
+    
+
+    if (bonusRange.value >= "1") {
+        activeImg[0].classList.add('active');
+        // animateValue(obj, 0, 2000, 100);
+        interactiveItems.forEach((e) => {
+            e.style.height = '0px'
+        })
+    }
+    if (bonusRange.value === "0") {
+        // activeImg[0].style.transform = `scale(1.3)`;
+        bonusText.innerHTML = `2 000`;
+        inviteFriendQuantity.innerHTML = `1 друга`
+        activeImg[0].classList.remove('active');
+        // if (bonusQuantity.innerHTML !== "2000") {
+            animateValue(bonusQuantity, 4000, 2000, 500);
+        // }
+        interactiveItems.forEach((e) => {
+            e.style.height = 'auto'
+        })
+    }
+});

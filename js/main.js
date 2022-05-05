@@ -1,78 +1,88 @@
-// number counter 
-// number counter 
+'use static'
 
-const bonusText = document.querySelectorAll(".bonus-clac--num");
-// const counters = document.querySelectorAll('.valuess');
-const speed = 200;
-
-
-
-
-
-
-
+const bonusText = document.querySelectorAll(".bonus-calc--num");
 const bonusRange = document.querySelector(".js-range-slider");
 let activeImg = document.querySelectorAll(".range-img");
-let bonusBox = document.querySelector('.bonus-calc')
-bonusRange.addEventListener("input", (event) => {
-  const value = Number(bonusRange.value) / 100;
-  bonusRange.style.setProperty("--thumb-rotate", `${value * 10720}deg`);
+let inviteFriendQuantity = document.getElementById('invite-friend-qtty');
+const bonusQuantity = document.getElementById("bonusQuantity");
+let interactiveItems = document.querySelectorAll('.interactive-element');
 
-  sliderAdd(parseInt(bonusRange.value));
-  sliderRemove(parseInt(bonusRange.value));
+let bonusSum = 0;
+function animateValue(bonusQuantity, start, end, duration) {
+    // let inProgress = 0
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        bonusQuantity.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+animateValue(bonusQuantity, 0, 2000, 500);
 
-  if (bonusRange.value == "0") {
-    activeImg[0].style.transform = `scale(1.3)`;
-    // bonusText.innerHTML = `2 000`;
-    activeImg[0].classList.remove('active');
 
-  }
-  if (bonusRange.value >= "1") {
-    activeImg[0].classList.add('active');
-  }
-});
 
 function sliderAdd(bonusRangeValue) {
-  bonusText.forEach( counter => {
-    const animate = () => {
-       const value = +counter.getAttribute('akhi');
-       const data = +counter.innerText;
-      
-       const time = value / speed;
-      if(data < value) {
-           counter.innerText = Math.ceil(data + time);
-           setTimeout(animate, 0);
-         }
-         else{
-           counter.innerText = value;
-         }
-      
+
+    console.log('as')
+    for (let i = 1; i <= bonusRangeValue; i++) {
+        activeImg[i].classList.add("active");
+        activeImg.forEach((element) => {
+            element.style.transform = `scale(0.${100 - bonusRangeValue * 2})`;
+        });
+        animateValue(bonusQuantity, bonusSum, (2000 * (i + 1)), 1000);
+        bonusSum = (2000 * (i + 1));
+        inviteFriendQuantity.innerHTML = `${i + 1} друзей`
     }
-    
-    animate();
- });
-  for (i = 1; i <= bonusRangeValue; i++) {
-    activeImg[i].classList.add("active");
-    activeImg.forEach((element) => {
-      element.style.transform = `scale(0.${100 - bonusRangeValue * 2})`;
-    });
-    
- 
-   
-    bonusText[0].setAttribute('akhi', `${2 * (i + 1)}000`)
-    // bonusText[0].innerHTML = `ok + ${ok}`
-    // bonusText.innerHTML = `${2 * (i + 1)} 000`;
-    // bonusText.setAttribute('akhi', '2000')
-    // bonusBox.innerHTML += '<img src="img/bonus.svg" alt="">';
-  }
 }
 
 function sliderRemove(bonusRangeValue) {
-  for (i = 6; i > bonusRangeValue; i--) {
-    if (activeImg[i].classList.contains("active")) {
-      activeImg[i].classList.remove("active");
+    for (let i = 7; i > bonusRangeValue; i--) {
+        if (activeImg[i - 1].classList.contains("active")) {
+            activeImg[i - 1].classList.remove("active");
+        }
+        animateValue(bonusQuantity, (2000 * (i + 1)), bonusSum, 1000);
+        bonusSum = (2000 * (i - 1));
+        inviteFriendQuantity.innerHTML = `${i} друзей`
     }
-    activeImg[i].style.transform = `scale(0)`;
-    // bonusBox.innerHTML--
-  }
+    // activeImg[i].style.transform = `scale(0)`;
+
 }
+let kostyl = 0
+
+bonusRange.addEventListener("input", () => {
+    if (kostyl <= bonusRange.value) {
+        sliderAdd(parseInt(bonusRange.value));
+        kostyl = bonusRange.value
+    } else if (kostyl >= bonusRange.value) {
+        sliderRemove(parseInt(bonusRange.value));
+        kostyl = bonusRange.value
+    }
+
+
+
+    if (bonusRange.value >= "1") {
+        activeImg[0].classList.add('active');
+        // animateValue(obj, 0, 2000, 100);
+        interactiveItems.forEach((e) => {
+            e.style.height = '0px'
+        })
+    }
+    if (bonusRange.value === "0") {
+        // activeImg[0].style.transform = `scale(1.3)`;
+        bonusText.innerHTML = `2 000`;
+        
+        inviteFriendQuantity.innerHTML = `1 друга`
+        activeImg[0].classList.remove('active');
+        // if (bonusQuantity.innerHTML !== "2000") {
+            animateValue(bonusQuantity, 4000, 2000, 500);
+        // }
+        interactiveItems.forEach((e) => {
+            e.style.height = 'auto'
+        })
+        console.log('123 - 321')
+    }
+});

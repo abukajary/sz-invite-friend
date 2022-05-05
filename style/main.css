@@ -5,7 +5,7 @@
     width: 345.01px;
     height: 56.8px;
     transform-origin: bottom;
-    background: #2D2B74;
+    background: radial-gradient(37.2% 37.2% at 49.88% 66.46%, #2D2B74 98.06%, #6563D4 100%);
     border-radius: 180%;
     bottom: 0;
     display: flex;
