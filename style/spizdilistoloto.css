@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/*
   Copyright 2012-2021 Art. Lebedev Studio (https://www.artlebedev.ru/). All Rights Reserved.
   @author Alexander Samilyak (aleksam@design.ru)
   @author Alexey Khapov (chemist@design.ru)
@@ -26,37 +33,29 @@
 
 .friends1 .friend-icon:first-of-type {
     -webkit-animation: friend1animation1 4.5s infinite linear;
-    -moz-animation: friend1animation1 4.5s infinite linear;
     animation: friend1animation1 4.5s infinite linear;
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s
 }
 
 .friends1 .friend-icon:nth-of-type(2) {
     -webkit-animation: friend1animation2 4.5s infinite linear;
-    -moz-animation: friend1animation2 4.5s infinite linear;
     animation: friend1animation2 4.5s infinite linear;
     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
     animation-delay: 1.5s
 }
 
 .friends1 .friend-icon:nth-of-type(3) {
     -webkit-animation: friend1animation1 4.5s infinite linear;
-    -moz-animation: friend1animation1 4.5s infinite linear;
     animation: friend1animation1 4.5s infinite linear;
     -webkit-animation-delay: 2.5s;
-    -moz-animation-delay: 2.5s;
     animation-delay: 2.5s
 }
 
 .friends1 .friend-icon:nth-of-type(4) {
     -webkit-animation: friend1animation2 4.5s infinite linear;
-    -moz-animation: friend1animation2 4.5s infinite linear;
     animation: friend1animation2 4.5s infinite linear;
     -webkit-animation-delay: 3.5s;
-    -moz-animation-delay: 3.5s;
     animation-delay: 3.5s
 }
 
@@ -79,30 +78,10 @@
     }
 }
 
-@-moz-keyframes friend1animation1 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(0) scale(.4);
-        transform: translate(0) scale(.4)
-    }
-
-    10% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(-130px, -150px) scale(1.2);
-        transform: translate(-130px, -150px) scale(1.2)
-    }
-}
-
 @keyframes friend1animation1 {
     0% {
         opacity: 0;
         -webkit-transform: translate(0) scale(.4);
-        -moz-transform: translate(0) scale(.4);
         transform: translate(0) scale(.4)
     }
 
@@ -114,7 +93,6 @@
     to {
         opacity: 0;
         -webkit-transform: translate(-130px, -150px) scale(1.2);
-        -moz-transform: translate(-130px, -150px) scale(1.2);
         transform: translate(-130px, -150px) scale(1.2)
     }
 }
@@ -138,30 +116,10 @@
     }
 }
 
-@-moz-keyframes friend1animation2 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(0) scale(-.4, .4);
-        transform: translate(0) scale(-.4, .4)
-    }
-
-    10% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(-50px, -200px) scale(-1.2, 1.2);
-        transform: translate(-50px, -200px) scale(-1.2, 1.2)
-    }
-}
-
 @keyframes friend1animation2 {
     0% {
         opacity: 0;
         -webkit-transform: translate(0) scale(-.4, .4);
-        -moz-transform: translate(0) scale(-.4, .4);
         transform: translate(0) scale(-.4, .4)
     }
 
@@ -173,14 +131,12 @@
     to {
         opacity: 0;
         -webkit-transform: translate(-50px, -200px) scale(-1.2, 1.2);
-        -moz-transform: translate(-50px, -200px) scale(-1.2, 1.2);
         transform: translate(-50px, -200px) scale(-1.2, 1.2)
     }
 }
 
 .friends2 .friend-icon {
     -webkit-animation: friend2animation 1.5s infinite linear alternate;
-    -moz-animation: friend2animation 1.5s infinite linear alternate;
     animation: friend2animation 1.5s infinite linear alternate;
     height: 88px;
     opacity: 0;
@@ -190,7 +146,6 @@
 
 .friends2 .friend-icon:first-of-type {
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     background: no-repeat url(/f/media/stoloto/invite-friends/friends/2-1-icon.svg?c0a20a26cab4401946b65cd2dff54aff);
     left: 70px;
@@ -199,7 +154,6 @@
 
 .friends2 .friend-icon:nth-of-type(2) {
     -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
     animation-delay: 1s;
     background: no-repeat url(/f/media/stoloto/invite-friends/friends/2-2-icon.svg?037d824d73d902af09509e15fb44cdf5);
     left: 25px;
@@ -208,7 +162,6 @@
 
 .friends2 .friend-icon:nth-of-type(3) {
     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
     background: no-repeat url(/f/media/stoloto/invite-friends/friends/2-3-icon.svg?f4c2faa6313ff1d49c1bba8786bda564);
     left: -50px;
@@ -233,32 +186,16 @@
     }
 }
 
-@-moz-keyframes friend2animation {
-    0% {
-        opacity: 1;
-        -moz-transform: scale(.3);
-        transform: scale(.3)
-    }
-
-    to {
-        opacity: 1;
-        -moz-transform: scale(1);
-        transform: scale(1)
-    }
-}
-
 @keyframes friend2animation {
     0% {
         opacity: 1;
         -webkit-transform: scale(.3);
-        -moz-transform: scale(.3);
         transform: scale(.3)
     }
 
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
         transform: scale(1)
     }
 }
@@ -275,37 +212,29 @@
 
 .friends3 .friend-icon:first-of-type {
     -webkit-animation: friend3animation1 3s infinite linear;
-    -moz-animation: friend3animation1 3s infinite linear;
     animation: friend3animation1 3s infinite linear;
     -webkit-animation-delay: .75s;
-    -moz-animation-delay: .75s;
     animation-delay: .75s
 }
 
 .friends3 .friend-icon:nth-of-type(2) {
     -webkit-animation: friend3animation2 3s infinite linear;
-    -moz-animation: friend3animation2 3s infinite linear;
     animation: friend3animation2 3s infinite linear;
     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
     animation-delay: 1.5s
 }
 
 .friends3 .friend-icon:nth-of-type(3) {
     -webkit-animation: friend3animation1 3s infinite linear;
-    -moz-animation: friend3animation1 3s infinite linear;
     animation: friend3animation1 3s infinite linear;
     -webkit-animation-delay: 2.25s;
-    -moz-animation-delay: 2.25s;
     animation-delay: 2.25s
 }
 
 .friends3 .friend-icon:nth-of-type(4) {
     -webkit-animation: friend3animation2 3s infinite linear;
-    -moz-animation: friend3animation2 3s infinite linear;
     animation: friend3animation2 3s infinite linear;
     -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
     animation-delay: 3s
 }
 
@@ -328,30 +257,10 @@
     }
 }
 
-@-moz-keyframes friend3animation1 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(0) scale(.4);
-        transform: translate(0) scale(.4)
-    }
-
-    10% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(-90px, -50px) scale(1);
-        transform: translate(-90px, -50px) scale(1)
-    }
-}
-
 @keyframes friend3animation1 {
     0% {
         opacity: 0;
         -webkit-transform: translate(0) scale(.4);
-        -moz-transform: translate(0) scale(.4);
         transform: translate(0) scale(.4)
     }
 
@@ -363,7 +272,6 @@
     to {
         opacity: 0;
         -webkit-transform: translate(-90px, -50px) scale(1);
-        -moz-transform: translate(-90px, -50px) scale(1);
         transform: translate(-90px, -50px) scale(1)
     }
 }
@@ -387,30 +295,10 @@
     }
 }
 
-@-moz-keyframes friend3animation2 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(0) scale(.4);
-        transform: translate(0) scale(.4)
-    }
-
-    10% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(-90px, -50px) scale(1);
-        transform: translate(-90px, -50px) scale(1)
-    }
-}
-
 @keyframes friend3animation2 {
     0% {
         opacity: 0;
         -webkit-transform: translate(0) scale(.4);
-        -moz-transform: translate(0) scale(.4);
         transform: translate(0) scale(.4)
     }
 
@@ -422,7 +310,6 @@
     to {
         opacity: 0;
         -webkit-transform: translate(-90px, -50px) scale(1);
-        -moz-transform: translate(-90px, -50px) scale(1);
         transform: translate(-90px, -50px) scale(1)
     }
 }
@@ -431,17 +318,14 @@
     opacity: 0;
     position: absolute;
     -webkit-transform-origin: bottom;
-    -moz-transform-origin: bottom;
     -ms-transform-origin: bottom;
     transform-origin: bottom
 }
 
 .friends4 .friend-icon:first-of-type {
     -webkit-animation: friend4animation1 1.5s infinite linear alternate;
-    -moz-animation: friend4animation1 1.5s infinite linear alternate;
     animation: friend4animation1 1.5s infinite linear alternate;
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     background: no-repeat url(/f/media/stoloto/invite-friends/friends/4-1-icon.svg?07e331964d5ba778c24b37946bd4cdaa);
     height: 65px;
@@ -461,19 +345,16 @@
 .friends4 .friend-icon:nth-of-type(2),
 .friends4 .friend-icon:nth-of-type(3) {
     -webkit-animation: friend4animation2 3s infinite linear;
-    -moz-animation: friend4animation2 3s infinite linear;
     animation: friend4animation2 3s infinite linear;
     height: 100px
 }
 
 .friends4 .friend-icon:nth-of-type(3) {
     -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
     animation-delay: 1s;
     background: no-repeat url(/f/media/stoloto/invite-friends/friends/4-3-icon.svg?5bad97030f62421ac1bd2f9bdf0de93a);
     left: 175px;
     -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
     width: 55px
@@ -497,32 +378,16 @@
     }
 }
 
-@-moz-keyframes friend4animation1 {
-    0% {
-        opacity: 1;
-        -moz-transform: rotate(-4deg);
-        transform: rotate(-4deg)
-    }
-
-    to {
-        opacity: 1;
-        -moz-transform: rotate(4deg);
-        transform: rotate(4deg)
-    }
-}
-
 @keyframes friend4animation1 {
     0% {
         opacity: 1;
         -webkit-transform: rotate(-4deg);
-        -moz-transform: rotate(-4deg);
         transform: rotate(-4deg)
     }
 
     to {
         opacity: 1;
         -webkit-transform: rotate(4deg);
-        -moz-transform: rotate(4deg);
         transform: rotate(4deg)
     }
 }
@@ -553,37 +418,10 @@
     }
 }
 
-@-moz-keyframes friend4animation2 {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(-80px);
-        transform: translateY(-80px)
-    }
-
-    10% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    90% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 0;
-        -moz-transform: translateY(-100px);
-        transform: translateY(-100px)
-    }
-}
-
 @keyframes friend4animation2 {
     0% {
         opacity: 0;
         -webkit-transform: translateY(-80px);
-        -moz-transform: translateY(-80px);
         transform: translateY(-80px)
     }
 
@@ -602,7 +440,6 @@
     to {
         opacity: 0;
         -webkit-transform: translateY(-100px);
-        -moz-transform: translateY(-100px);
         transform: translateY(-100px)
     }
 }
@@ -617,39 +454,30 @@
 
 .friends5 .friend-icon:first-of-type {
     -webkit-animation: friend5animation1 1.5s infinite linear;
-    -moz-animation: friend5animation1 1.5s infinite linear;
     animation: friend5animation1 1.5s infinite linear;
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     -webkit-transform: translate(-25px, -50px) scale(.5);
-    -moz-transform: translate(-25px, -50px) scale(.5);
     -ms-transform: translate(-25px, -50px) scale(.5);
     transform: translate(-25px, -50px) scale(.5)
 }
 
 .friends5 .friend-icon:nth-of-type(2) {
     -webkit-animation: friend5animation2 1.5s infinite linear;
-    -moz-animation: friend5animation2 1.5s infinite linear;
     animation: friend5animation2 1.5s infinite linear;
     -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
     animation-delay: 1s;
     -webkit-transform: translate(-15px, -125px);
-    -moz-transform: translate(-15px, -125px);
     -ms-transform: translate(-15px, -125px);
     transform: translate(-15px, -125px)
 }
 
 .friends5 .friend-icon:nth-of-type(3) {
     -webkit-animation: friend5animation3 1.5s infinite linear;
-    -moz-animation: friend5animation3 1.5s infinite linear;
     animation: friend5animation3 1.5s infinite linear;
     -webkit-animation-delay: 1.5s;
-    -moz-animation-delay: 1.5s;
     animation-delay: 1.5s;
     -webkit-transform: translate(45px, -110px) scale(.75);
-    -moz-transform: translate(45px, -110px) scale(.75);
     -ms-transform: translate(45px, -110px) scale(.75);
     transform: translate(45px, -110px) scale(.75)
 }
@@ -677,30 +505,10 @@
     }
 }
 
-@-moz-keyframes friend5animation1 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(-35px, -60px) scale(.5);
-        transform: translate(-35px, -60px) scale(.5)
-    }
-
-    40% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(-55px, -80px) scale(.5);
-        transform: translate(-55px, -80px) scale(.5)
-    }
-}
-
 @keyframes friend5animation1 {
     0% {
         opacity: 0;
         -webkit-transform: translate(-35px, -60px) scale(.5);
-        -moz-transform: translate(-35px, -60px) scale(.5);
         transform: translate(-35px, -60px) scale(.5)
     }
 
@@ -712,7 +520,6 @@
     to {
         opacity: 0;
         -webkit-transform: translate(-55px, -80px) scale(.5);
-        -moz-transform: translate(-55px, -80px) scale(.5);
         transform: translate(-55px, -80px) scale(.5)
     }
 }
@@ -736,30 +543,10 @@
     }
 }
 
-@-moz-keyframes friend5animation2 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(-35px, -125px);
-        transform: translate(-35px, -125px)
-    }
-
-    40% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(-35px, -135px);
-        transform: translate(-35px, -135px)
-    }
-}
-
 @keyframes friend5animation2 {
     0% {
         opacity: 0;
         -webkit-transform: translate(-35px, -125px);
-        -moz-transform: translate(-35px, -125px);
         transform: translate(-35px, -125px)
     }
 
@@ -771,7 +558,6 @@
     to {
         opacity: 0;
         -webkit-transform: translate(-35px, -135px);
-        -moz-transform: translate(-35px, -135px);
         transform: translate(-35px, -135px)
     }
 }
@@ -795,30 +581,10 @@
     }
 }
 
-@-moz-keyframes friend5animation3 {
-    0% {
-        opacity: 0;
-        -moz-transform: translate(45px, -110px) scale(.75);
-        transform: translate(45px, -110px) scale(.75)
-    }
-
-    40% {
-        opacity: 1
-    }
-
-    80%,
-    to {
-        opacity: 0;
-        -moz-transform: translate(55px, -120px) scale(.75);
-        transform: translate(55px, -120px) scale(.75)
-    }
-}
-
 @keyframes friend5animation3 {
     0% {
         opacity: 0;
         -webkit-transform: translate(45px, -110px) scale(.75);
-        -moz-transform: translate(45px, -110px) scale(.75);
         transform: translate(45px, -110px) scale(.75)
     }
 
@@ -830,7 +596,6 @@
     to {
         opacity: 0;
         -webkit-transform: translate(55px, -120px) scale(.75);
-        -moz-transform: translate(55px, -120px) scale(.75);
         transform: translate(55px, -120px) scale(.75)
     }
 }
@@ -843,7 +608,6 @@
 
 .friends6 .friend-icon:first-of-type {
     -webkit-animation: friend6animation1 2s forwards;
-    -moz-animation: friend6animation1 2s forwards;
     animation: friend6animation1 2s forwards;
     background: no-repeat url(/f/media/stoloto/invite-friends/friends/6-1-icon.svg?f4bc5487b15f521914ed70b74677d6da);
     height: 34px;
@@ -863,7 +627,6 @@
 .friends6 .friend-icon:nth-of-type(2),
 .friends6 .friend-icon:nth-of-type(3) {
     -webkit-animation: friend6animation2 2s infinite linear;
-    -moz-animation: friend6animation2 2s infinite linear;
     animation: friend6animation2 2s infinite linear
 }
 
@@ -880,18 +643,6 @@
 }
 
 @-webkit-keyframes friend6animation1 {
-
-    0%,
-    5% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-moz-keyframes friend6animation1 {
 
     0%,
     5% {
@@ -941,37 +692,10 @@
     }
 }
 
-@-moz-keyframes friend6animation2 {
-    0% {
-        opacity: 0;
-        -moz-transform: translateY(-80px);
-        transform: translateY(-80px)
-    }
-
-    10% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    90% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 0;
-        -moz-transform: translateY(-100px);
-        transform: translateY(-100px)
-    }
-}
-
 @keyframes friend6animation2 {
     0% {
         opacity: 0;
         -webkit-transform: translateY(-80px);
-        -moz-transform: translateY(-80px);
         transform: translateY(-80px)
     }
 
@@ -990,7 +714,6 @@
     to {
         opacity: 0;
         -webkit-transform: translateY(-100px);
-        -moz-transform: translateY(-100px);
         transform: translateY(-100px)
     }
 }
@@ -1004,7 +727,6 @@
     top: -150px;
     position: absolute;
     -webkit-transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
     -ms-transform: rotate(-4deg);
     transform: rotate(-4deg);
     width: 71px
@@ -1012,10 +734,8 @@
 
 .friends7 .friend-icon:first-of-type {
     -webkit-animation: friend7animation .5s infinite linear alternate;
-    -moz-animation: friend7animation .5s infinite linear alternate;
     animation: friend7animation .5s infinite linear alternate;
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     display: block
 }
@@ -1034,32 +754,16 @@
     }
 }
 
-@-moz-keyframes friend7animation {
-    0% {
-        opacity: 1;
-        -moz-transform: rotate(-4deg);
-        transform: rotate(-4deg)
-    }
-
-    to {
-        opacity: 1;
-        -moz-transform: rotate(4deg);
-        transform: rotate(4deg)
-    }
-}
-
 @keyframes friend7animation {
     0% {
         opacity: 1;
         -webkit-transform: rotate(-4deg);
-        -moz-transform: rotate(-4deg);
         transform: rotate(-4deg)
     }
 
     to {
         opacity: 1;
         -webkit-transform: rotate(4deg);
-        -moz-transform: rotate(4deg);
         transform: rotate(4deg)
     }
 }
@@ -1078,10 +782,8 @@
 
 .friends8 .friend-icon:first-of-type {
     -webkit-animation: friend8animation .5s infinite linear;
-    -moz-animation: friend8animation .5s infinite linear;
     animation: friend8animation .5s infinite linear;
     -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
     animation-delay: .3s;
     display: block
 }
@@ -1100,32 +802,16 @@
     }
 }
 
-@-moz-keyframes friend8animation {
-    0% {
-        opacity: 1;
-        -moz-transform: rotate(0);
-        transform: rotate(0)
-    }
-
-    to {
-        opacity: 1;
-        -moz-transform: rotate(1turn);
-        transform: rotate(1turn)
-    }
-}
-
 @keyframes friend8animation {
     0% {
         opacity: 1;
         -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
         transform: rotate(0)
     }
 
     to {
         opacity: 1;
         -webkit-transform: rotate(1turn);
-        -moz-transform: rotate(1turn);
         transform: rotate(1turn)
     }
 }
@@ -1137,11 +823,9 @@
     left: 176px;
     opacity: 0;
     -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
     transform: rotate(-10deg);
     -webkit-transform-origin: bottom;
-    -moz-transform-origin: bottom;
     -ms-transform-origin: bottom;
     transform-origin: bottom;
     top: -150px;
@@ -1151,10 +835,8 @@
 
 .friends9 .friend-icon:first-of-type {
     -webkit-animation: friend9animation .5s infinite linear alternate;
-    -moz-animation: friend9animation .5s infinite linear alternate;
     animation: friend9animation .5s infinite linear alternate;
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     display: block
 }
@@ -1173,32 +855,16 @@
     }
 }
 
-@-moz-keyframes friend9animation {
-    0% {
-        opacity: 1;
-        -moz-transform: rotate(-5deg);
-        transform: rotate(-5deg)
-    }
-
-    to {
-        opacity: 1;
-        -moz-transform: rotate(5deg);
-        transform: rotate(5deg)
-    }
-}
-
 @keyframes friend9animation {
     0% {
         opacity: 1;
         -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
         transform: rotate(-5deg)
     }
 
     to {
         opacity: 1;
         -webkit-transform: rotate(5deg);
-        -moz-transform: rotate(5deg);
         transform: rotate(5deg)
     }
 }
@@ -1210,7 +876,6 @@
     left: 40px;
     opacity: 0;
     -webkit-transform: scale(.5);
-    -moz-transform: scale(.5);
     -ms-transform: scale(.5);
     transform: scale(.5);
     top: -190px;
@@ -1220,10 +885,8 @@
 
 .friends10 .friend-icon:first-of-type {
     -webkit-animation: friend10animation .5s infinite linear alternate;
-    -moz-animation: friend10animation .5s infinite linear alternate;
     animation: friend10animation .5s infinite linear alternate;
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     display: block
 }
@@ -1242,32 +905,16 @@
     }
 }
 
-@-moz-keyframes friend10animation {
-    0% {
-        opacity: 1;
-        -moz-transform: scale(.7);
-        transform: scale(.7)
-    }
-
-    to {
-        opacity: 1;
-        -moz-transform: scale(1);
-        transform: scale(1)
-    }
-}
-
 @keyframes friend10animation {
     0% {
         opacity: 1;
         -webkit-transform: scale(.7);
-        -moz-transform: scale(.7);
         transform: scale(.7)
     }
 
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-        -moz-transform: scale(1);
         transform: scale(1)
     }
 }
@@ -1402,27 +1049,25 @@ body {
 
 #layout {
     -webkit-transition: none;
-    -moz-transition: none;
+    -o-transition: none;
     transition: none
 }
 
 .layout_container {
     opacity: 0;
     -webkit-transform: translateY(-150px);
-    -moz-transform: translateY(-150px);
     -ms-transform: translateY(-150px);
     transform: translateY(-150px);
     -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
     transition: opacity .5s ease, -webkit-transform .5s ease;
-    -moz-transition: opacity ease .5s, transform ease .5s, -moz-transform ease .5s;
+    -o-transition: opacity .5s ease, transform .5s ease;
     transition: opacity .5s ease, transform .5s ease;
-    transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease, -moz-transform .5s ease
+    transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease
 }
 
 .layout_container.initialized {
     opacity: 1;
     -webkit-transform: none;
-    -moz-transform: none;
     -ms-transform: none;
     transform: none
 }
@@ -1446,7 +1091,7 @@ body {
     color: #cecccc;
     border-color: hsla(0, 2%, 80%, .3);
     -webkit-transition: 1s;
-    -moz-transition: 1s;
+    -o-transition: 1s;
     transition: 1s
 }
 
@@ -1548,7 +1193,6 @@ section.friends .friends-bonuses .friends-phone {
 section.friends .friends-bonuses .friends-phone {
     position: relative;
     -webkit-transform: rotate(8deg);
-    -moz-transform: rotate(8deg);
     -ms-transform: rotate(8deg);
     transform: rotate(8deg)
 }
@@ -1557,9 +1201,7 @@ section.friends .friends-bonuses .friends-phone .phone {
     background: #36abeb;
     border: 5px solid #fff;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-border-radius: 30px;
     border-radius: 30px;
     bottom: 75px;
     height: 448px;
@@ -1570,13 +1212,12 @@ section.friends .friends-bonuses .friends-phone .phone {
 
 section.friends .friends-bonuses .friends-phone .phone:after,
 section.friends .friends-bonuses .friends-phone .phone:before {
-    -webkit-border-radius: 30px;
     border-radius: 30px;
     content: '';
     height: 100%;
     position: absolute;
     -webkit-transition: .3s ease-out;
-    -moz-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
     transition: .3s ease-out;
     width: 100%;
     z-index: -1
@@ -1586,18 +1227,15 @@ section.friends .friends-bonuses .friends-phone .phone:after {
     background: #1366b5;
     opacity: .4;
     -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0);
     -webkit-transform-origin: 45% 110%;
-    -moz-transform-origin: 45% 110%;
     -ms-transform-origin: 45% 110%;
     transform-origin: 45% 110%
 }
 
 .initialized section.friends .friends-bonuses .friends-phone .phone:after {
     -webkit-transform: rotate(-12deg);
-    -moz-transform: rotate(-12deg);
     -ms-transform: rotate(-12deg);
     transform: rotate(-12deg)
 }
@@ -1606,18 +1244,15 @@ section.friends .friends-bonuses .friends-phone .phone:before {
     background: #1366b5;
     opacity: .2;
     -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0);
     -webkit-transform-origin: 75% 110%;
-    -moz-transform-origin: 75% 110%;
     -ms-transform-origin: 75% 110%;
     transform-origin: 75% 110%
 }
 
 .initialized section.friends .friends-bonuses .friends-phone .phone:before {
     -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);
     transform: rotate(-20deg)
 }
@@ -1628,20 +1263,17 @@ section.friends .friends-bonuses .friends-phone .phone img {
     position: absolute;
     right: 0;
     -webkit-transform-origin: bottom center;
-    -moz-transform-origin: bottom center;
     -ms-transform-origin: bottom center;
     transform-origin: bottom center;
     -webkit-transition: .3s;
-    -moz-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     will-change: transform
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:first-child {
-    -webkit-border-bottom-right-radius: 25px;
     border-bottom-right-radius: 25px;
     -webkit-transform-origin: bottom right;
-    -moz-transform-origin: bottom right;
     -ms-transform-origin: bottom right;
     transform-origin: bottom right
 }
@@ -1677,71 +1309,71 @@ section.friends .friends-bonuses .friends-phone .phone img:nth-child(9) {
 
 section.friends .friends-bonuses .friends-phone .phone img:first-of-type {
     -webkit-transition-delay: .01s;
-    -moz-transition-delay: .01s;
-    transition-delay: .01s;
+    -o-transition-delay: .01s;
+       transition-delay: .01s;
     z-index: 9
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(2) {
     -webkit-transition-delay: .02s;
-    -moz-transition-delay: .02s;
-    transition-delay: .02s;
+    -o-transition-delay: .02s;
+       transition-delay: .02s;
     z-index: 8
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(3) {
     -webkit-transition-delay: .03s;
-    -moz-transition-delay: .03s;
-    transition-delay: .03s;
+    -o-transition-delay: .03s;
+       transition-delay: .03s;
     z-index: 7
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(4) {
     -webkit-transition-delay: .04s;
-    -moz-transition-delay: .04s;
-    transition-delay: .04s;
+    -o-transition-delay: .04s;
+       transition-delay: .04s;
     z-index: 6
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(5) {
     -webkit-transition-delay: .05s;
-    -moz-transition-delay: .05s;
-    transition-delay: .05s;
+    -o-transition-delay: .05s;
+       transition-delay: .05s;
     z-index: 5
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(6) {
     -webkit-transition-delay: .06s;
-    -moz-transition-delay: .06s;
-    transition-delay: .06s;
+    -o-transition-delay: .06s;
+       transition-delay: .06s;
     z-index: 4
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(7) {
     -webkit-transition-delay: .07s;
-    -moz-transition-delay: .07s;
-    transition-delay: .07s;
+    -o-transition-delay: .07s;
+       transition-delay: .07s;
     z-index: 3
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(8) {
     -webkit-transition-delay: .08s;
-    -moz-transition-delay: .08s;
-    transition-delay: .08s;
+    -o-transition-delay: .08s;
+       transition-delay: .08s;
     z-index: 2
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(9) {
     -webkit-transition-delay: .09s;
-    -moz-transition-delay: .09s;
-    transition-delay: .09s;
+    -o-transition-delay: .09s;
+       transition-delay: .09s;
     z-index: 1
 }
 
 section.friends .friends-bonuses .friends-phone .phone img:nth-of-type(10) {
     -webkit-transition-delay: .1s;
-    -moz-transition-delay: .1s;
-    transition-delay: .1s;
+    -o-transition-delay: .1s;
+       transition-delay: .1s;
     z-index: 0
 }
 
@@ -1751,7 +1383,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends1 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends1 img:first-child {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -1766,7 +1397,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends1 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -1777,14 +1407,12 @@ section.friends .friends-bonuses .friends-phone .phone.friends2 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends2 img:first-child {
     -webkit-transform: scale(.76);
-    -moz-transform: scale(.76);
     -ms-transform: scale(.76);
     transform: scale(.76)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(2) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -1798,7 +1426,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends2 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -1809,21 +1436,18 @@ section.friends .friends-bonuses .friends-phone .phone.friends3 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends3 img:first-child {
     -webkit-transform: scale(.74);
-    -moz-transform: scale(.74);
     -ms-transform: scale(.74);
     transform: scale(.74)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(2) {
     -webkit-transform: scale(.96);
-    -moz-transform: scale(.96);
     -ms-transform: scale(.96);
     transform: scale(.96)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(3) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -1836,7 +1460,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends3 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -1847,28 +1470,24 @@ section.friends .friends-bonuses .friends-phone .phone.friends4 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:first-child {
     -webkit-transform: scale(.72);
-    -moz-transform: scale(.72);
     -ms-transform: scale(.72);
     transform: scale(.72)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(2) {
     -webkit-transform: scale(.94);
-    -moz-transform: scale(.94);
     -ms-transform: scale(.94);
     transform: scale(.94)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(3) {
     -webkit-transform: scale(.92);
-    -moz-transform: scale(.92);
     -ms-transform: scale(.92);
     transform: scale(.92)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(4) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -1880,7 +1499,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -1891,35 +1509,30 @@ section.friends .friends-bonuses .friends-phone .phone.friends5 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:first-child {
     -webkit-transform: scale(.7);
-    -moz-transform: scale(.7);
     -ms-transform: scale(.7);
     transform: scale(.7)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(2) {
     -webkit-transform: scale(.92);
-    -moz-transform: scale(.92);
     -ms-transform: scale(.92);
     transform: scale(.92)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(3) {
     -webkit-transform: scale(.9);
-    -moz-transform: scale(.9);
     -ms-transform: scale(.9);
     transform: scale(.9)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(4) {
     -webkit-transform: scale(.94);
-    -moz-transform: scale(.94);
     -ms-transform: scale(.94);
     transform: scale(.94)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(5) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -1930,7 +1543,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -1941,7 +1553,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends6 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:first-child {
     -webkit-transform: scale(.68);
-    -moz-transform: scale(.68);
     -ms-transform: scale(.68);
     transform: scale(.68)
 }
@@ -1949,7 +1560,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends6 img:first-child 
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(2),
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(3) {
     -webkit-transform: scale(.88);
-    -moz-transform: scale(.88);
     -ms-transform: scale(.88);
     transform: scale(.88)
 }
@@ -1957,14 +1567,12 @@ section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(3)
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(4),
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(5) {
     -webkit-transform: scale(.92);
-    -moz-transform: scale(.92);
     -ms-transform: scale(.92);
     transform: scale(.92)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(6) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -1974,7 +1582,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -1985,7 +1592,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends7 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:first-child {
     -webkit-transform: scale(.66);
-    -moz-transform: scale(.66);
     -ms-transform: scale(.66);
     transform: scale(.66)
 }
@@ -1993,7 +1599,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends7 img:first-child 
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(2),
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(3) {
     -webkit-transform: scale(.86);
-    -moz-transform: scale(.86);
     -ms-transform: scale(.86);
     transform: scale(.86)
 }
@@ -2001,21 +1606,18 @@ section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(3)
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(4),
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(5) {
     -webkit-transform: scale(.9);
-    -moz-transform: scale(.9);
     -ms-transform: scale(.9);
     transform: scale(.9)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(6) {
     -webkit-transform: scale(.96);
-    -moz-transform: scale(.96);
     -ms-transform: scale(.96);
     transform: scale(.96)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(7) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -2024,7 +1626,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends7 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -2035,7 +1636,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends8 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:first-child {
     -webkit-transform: scale(.64);
-    -moz-transform: scale(.64);
     -ms-transform: scale(.64);
     transform: scale(.64)
 }
@@ -2043,7 +1643,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends8 img:first-child 
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(2),
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(3) {
     -webkit-transform: scale(.84);
-    -moz-transform: scale(.84);
     -ms-transform: scale(.84);
     transform: scale(.84)
 }
@@ -2051,7 +1650,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(3)
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(4),
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(5) {
     -webkit-transform: scale(.88);
-    -moz-transform: scale(.88);
     -ms-transform: scale(.88);
     transform: scale(.88)
 }
@@ -2059,14 +1657,12 @@ section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(5)
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(6),
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(7) {
     -webkit-transform: scale(.94);
-    -moz-transform: scale(.94);
     -ms-transform: scale(.94);
     transform: scale(.94)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(8) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
@@ -2074,7 +1670,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(8)
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(9),
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -2085,7 +1680,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends9 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:first-child {
     -webkit-transform: scale(.62);
-    -moz-transform: scale(.62);
     -ms-transform: scale(.62);
     transform: scale(.62)
 }
@@ -2093,7 +1687,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends9 img:first-child 
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(2),
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(3) {
     -webkit-transform: scale(.82);
-    -moz-transform: scale(.82);
     -ms-transform: scale(.82);
     transform: scale(.82)
 }
@@ -2101,7 +1694,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(3)
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(4),
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(5) {
     -webkit-transform: scale(.86);
-    -moz-transform: scale(.86);
     -ms-transform: scale(.86);
     transform: scale(.86)
 }
@@ -2109,28 +1701,24 @@ section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(5)
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(6),
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(7) {
     -webkit-transform: scale(.92);
-    -moz-transform: scale(.92);
     -ms-transform: scale(.92);
     transform: scale(.92)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(8) {
     -webkit-transform: scale(.98);
-    -moz-transform: scale(.98);
     -ms-transform: scale(.98);
     transform: scale(.98)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(9) {
     -webkit-transform: scale(.95);
-    -moz-transform: scale(.95);
     -ms-transform: scale(.95);
     transform: scale(.95)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:nth-child(10) {
     -webkit-transform: scale(0);
-    -moz-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0)
 }
@@ -2141,7 +1729,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends10 img {
 
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:first-child {
     -webkit-transform: scale(.6);
-    -moz-transform: scale(.6);
     -ms-transform: scale(.6);
     transform: scale(.6)
 }
@@ -2149,7 +1736,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends10 img:first-child
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(2),
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(3) {
     -webkit-transform: scale(.8);
-    -moz-transform: scale(.8);
     -ms-transform: scale(.8);
     transform: scale(.8)
 }
@@ -2157,7 +1743,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(3
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(4),
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(5) {
     -webkit-transform: scale(.84);
-    -moz-transform: scale(.84);
     -ms-transform: scale(.84);
     transform: scale(.84)
 }
@@ -2165,46 +1750,39 @@ section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(5
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(6),
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(7) {
     -webkit-transform: scale(.9);
-    -moz-transform: scale(.9);
     -ms-transform: scale(.9);
     transform: scale(.9)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(8) {
     -webkit-transform: scale(.96);
-    -moz-transform: scale(.96);
     -ms-transform: scale(.96);
     transform: scale(.96)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(9) {
     -webkit-transform: scale(.93);
-    -moz-transform: scale(.93);
     -ms-transform: scale(.93);
     transform: scale(.93)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:nth-child(10) {
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends2 img:first-child {
-    -webkit-border-bottom-right-radius: 33px;
     border-bottom-right-radius: 33px
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends3 img:first-child,
 section.friends .friends-bonuses .friends-phone .phone.friends4 img:first-child,
 section.friends .friends-bonuses .friends-phone .phone.friends5 img:first-child {
-    -webkit-border-bottom-right-radius: 36px;
     border-bottom-right-radius: 36px
 }
 
 section.friends .friends-bonuses .friends-phone .phone.friends6 img:first-child {
-    -webkit-border-bottom-right-radius: 40px;
     border-bottom-right-radius: 40px
 }
 
@@ -2212,7 +1790,6 @@ section.friends .friends-bonuses .friends-phone .phone.friends7 img:first-child,
 section.friends .friends-bonuses .friends-phone .phone.friends8 img:first-child,
 section.friends .friends-bonuses .friends-phone .phone.friends9 img:first-child,
 section.friends .friends-bonuses .friends-phone .phone.friends10 img:first-child {
-    -webkit-border-bottom-right-radius: 44px;
     border-bottom-right-radius: 44px
 }
 
@@ -2234,7 +1811,6 @@ section.friends .friends-bonuses .friends-bonus .bonus .games,
 section.friends .friends-bonuses .friends-bonus .special-bonus .games {
     display: inline-block;
     -webkit-transform: translate(8px, 4px);
-    -moz-transform: translate(8px, 4px);
     -ms-transform: translate(8px, 4px);
     transform: translate(8px, 4px)
 }
@@ -2242,17 +1818,14 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games {
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon,
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon {
     -webkit-animation: .5s smoothLeft forwards;
-    -moz-animation: .5s smoothLeft forwards;
     animation: .5s smoothLeft forwards;
     background-size: 85% auto;
-    -webkit-border-radius: 100%;
     border-radius: 100%;
     height: 45px;
     margin-right: -25px;
     opacity: 0;
     position: relative;
     -webkit-transform: translateX(25px);
-    -moz-transform: translateX(25px);
     -ms-transform: translateX(25px);
     transform: translateX(25px);
     width: 45px
@@ -2269,7 +1842,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:first-of-type,
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:first-of-type {
     -webkit-animation-delay: .05s;
-    -moz-animation-delay: .05s;
     animation-delay: .05s;
     z-index: 9
 }
@@ -2277,7 +1849,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(2),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(2) {
     -webkit-animation-delay: .1s;
-    -moz-animation-delay: .1s;
     animation-delay: .1s;
     z-index: 8
 }
@@ -2285,7 +1856,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(3),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(3) {
     -webkit-animation-delay: .15s;
-    -moz-animation-delay: .15s;
     animation-delay: .15s;
     z-index: 7
 }
@@ -2293,7 +1863,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(4),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(4) {
     -webkit-animation-delay: .2s;
-    -moz-animation-delay: .2s;
     animation-delay: .2s;
     z-index: 6
 }
@@ -2301,7 +1870,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(5),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(5) {
     -webkit-animation-delay: .25s;
-    -moz-animation-delay: .25s;
     animation-delay: .25s;
     z-index: 5
 }
@@ -2309,7 +1877,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(6),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(6) {
     -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
     animation-delay: .3s;
     z-index: 4
 }
@@ -2317,7 +1884,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(7),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(7) {
     -webkit-animation-delay: .35s;
-    -moz-animation-delay: .35s;
     animation-delay: .35s;
     z-index: 3
 }
@@ -2325,7 +1891,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(8),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(8) {
     -webkit-animation-delay: .4s;
-    -moz-animation-delay: .4s;
     animation-delay: .4s;
     z-index: 2
 }
@@ -2333,7 +1898,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(9),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(9) {
     -webkit-animation-delay: .45s;
-    -moz-animation-delay: .45s;
     animation-delay: .45s;
     z-index: 1
 }
@@ -2341,7 +1905,6 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
 section.friends .friends-bonuses .friends-bonus .bonus .games .game_logo_icon:nth-of-type(10),
 section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo_icon:nth-of-type(10) {
     -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
     animation-delay: .5s;
     z-index: 0
 }
@@ -2354,19 +1917,10 @@ section.friends .friends-bonuses .friends-bonus .special-bonus .games .game_logo
     }
 }
 
-@-moz-keyframes smoothLeft {
-    to {
-        opacity: 1;
-        -moz-transform: translateX(0);
-        transform: translateX(0)
-    }
-}
-
 @keyframes smoothLeft {
     to {
         opacity: 1;
         -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
         transform: translateX(0)
     }
 }
@@ -2411,7 +1965,6 @@ section.friends .invite-friend-scale {
     right: 0;
     top: 120px;
     -webkit-transform: translateY(140px) rotate(8deg);
-    -moz-transform: translateY(140px) rotate(8deg);
     -ms-transform: translateY(140px) rotate(8deg);
     transform: translateY(140px) rotate(8deg);
     width: 100px;
@@ -2428,7 +1981,6 @@ section.friends .invite-friend-scale .scale.ui-slider.white {
 
 section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-line {
     background: #83caf2;
-    -webkit-border-radius: 7px;
     border-radius: 7px;
     height: 7px;
     left: -22px;
@@ -2439,7 +1991,6 @@ section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-
 
 section.friends .invite-friend-scale .scale.ui-slider.ui-slider-pips .ui-slider-label {
     -webkit-transform: rotate(-8deg);
-    -moz-transform: rotate(-8deg);
     -ms-transform: rotate(-8deg);
     transform: rotate(-8deg);
     will-change: transform
@@ -2551,7 +2102,6 @@ section.faq .pretty_button {
 
 .repost:before {
     border: 1px solid #fff;
-    -webkit-border-radius: 100%;
     border-radius: 100%;
     content: '';
     height: 150px;
@@ -2559,7 +2109,6 @@ section.faq .pretty_button {
     position: absolute;
     top: 50%;
     -webkit-transform: translate(-135px, -50%);
-    -moz-transform: translate(-135px, -50%);
     -ms-transform: translate(-135px, -50%);
     transform: translate(-135px, -50%);
     width: 150px
@@ -2612,8 +2161,6 @@ section.faq .pretty_button {
 
 .tabs_switcher {
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     margin: 30px 0
@@ -2665,13 +2212,9 @@ section.faq .pretty_button {
 
 .view_social .social_buttons {
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     margin: 55px 0 35px
@@ -2686,7 +2229,7 @@ section.faq .pretty_button {
     box-shadow: 0 10px 8px -8px rgba(0, 0, 0, .5);
     -webkit-transition: -webkit-box-shadow .2s;
     transition: -webkit-box-shadow .2s;
-    -moz-transition: box-shadow .2s;
+    -o-transition: box-shadow .2s;
     transition: box-shadow .2s;
     transition: box-shadow .2s, -webkit-box-shadow .2s
 }
@@ -2719,13 +2262,9 @@ section.faq .pretty_button {
 
 .view_email .pretty_form {
     display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     position: relative
@@ -2748,7 +2287,6 @@ section.faq .pretty_button {
 }
 
 .view_email .pretty_form .pretty_form_inlined .pretty_form_item input {
-    -webkit-border-radius: 5px;
     border-radius: 5px;
     background: transparent;
     color: #fff;

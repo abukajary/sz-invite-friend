@@ -1,17 +1,30 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 @media screen and (min-width: 900px) {
     .header-content h1:nth-child(1) {
         display: none;
     }
     .dekstop-flex.header-info {
+        display: -ms-grid;
         display: grid;        
+        -ms-grid-columns: none;        
         grid-template-columns: none;
 
        
     }
     .dekstop-flex {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 48px 1fr;
         grid-template-columns: 1fr 1fr;
-        column-gap: 48px;
+        -webkit-column-gap: 48px;
+           -moz-column-gap: 48px;
+                column-gap: 48px;
     }
 
     .container {
@@ -89,7 +102,9 @@ line-height: 25px;
 }
 .dekstop-flex:nth-child(3) {
     margin-top: 80px;
-    column-gap: 50px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
 }
 
 
@@ -104,7 +119,9 @@ line-height: 25px;
     }
 
     .range-img-first {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+                transform: scale(1);
     }
 
     .range-img-first,
@@ -114,10 +131,14 @@ line-height: 25px;
     }
 
     .bonus-info--list {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 60px 1fr;
         grid-template-columns: 1fr 1fr;
         row-gap: 25px;
-        column-gap: 60px;
+        -webkit-column-gap: 60px;
+           -moz-column-gap: 60px;
+                column-gap: 60px;
         font-size: 18px;
         margin-top: 40px;
     }
@@ -156,7 +177,9 @@ line-height: 25px;
         /* filter: blur(30px); */
         top: 0;
         z-index: 20;
-        transform: translateY(-60%);
+        -webkit-transform: translateY(-60%);
+            -ms-transform: translateY(-60%);
+                transform: translateY(-60%);
     }
     .range-img:nth-child(2).active {
         margin-left: 255px;
